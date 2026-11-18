@@ -69,6 +69,7 @@
 .onto-type{font:12px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted)}
 .onto-type b{color:var(--accent);font-weight:600}
 .edge-src,.edge-lift{grid-column:2;font-size:13px;line-height:1.6;color:var(--muted)}
+.doi-link{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:2px;overflow-wrap:anywhere}.doi-link:hover{text-decoration-color:var(--accent)}
 .edge-lift{border-left:2px solid var(--line);padding-left:8px;margin-top:2px}
 .chk code{font-size:12px}
 .chk.label{background:var(--tint)}
