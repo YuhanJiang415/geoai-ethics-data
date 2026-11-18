@@ -10,7 +10,7 @@ graph and method resources. The complete searchable catalogue is expandable.
 The worked example switches between potential privacy risk, an instantiated
 mechanism, an implemented mitigation and a not-triggered comparison. Optional
 reading contains workflow/verification notes, temporal context and experiment
-links. File previews, light/dark themes, a citation copy button and a complete
+links. File previews, light/dark themes and a complete
 data ZIP are also available. Previews and chart data are embedded in the
 page so that they work when opening the HTML from disk.
 

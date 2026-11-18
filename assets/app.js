@@ -206,7 +206,7 @@
     clearTimeout(toastTimer); $('toast').textContent = message; $('toast').hidden = false;
     toastTimer = setTimeout(() => { $('toast').hidden = true; }, 3500);
   }
-  $('copy-citation').addEventListener('click', async () => {
+  $('copy-citation')?.addEventListener('click', async () => {
     const citation = $('citation-text').textContent;
     try {
       if (!navigator.clipboard) throw new Error('Clipboard API unavailable');
