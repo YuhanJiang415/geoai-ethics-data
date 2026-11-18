@@ -1,0 +1,9 @@
+﻿scenario,any_triple,any_anchored_triple,any_instantiated_triple,any_active_risk_edge,any_instantiated_risk_edge,any_instantiated_impact_edge,complete_active_path,complete_anchored_active_path,complete_instantiated_path,complete_anchored_instantiated_path,n_triples,n_active_risk_edges
+remove_top_0_risk_edges,14730,14105,10191,14598,9230,891,13969,12360,764,621,65090,58192
+remove_top_1_risk_edges,14691,14062,8091,14554,7044,891,12639,10996,526,383,61683,54922
+remove_top_3_risk_edges,14067,13430,7984,13854,6936,720,12036,10338,498,351,57355,50636
+remove_top_5_risk_edges,13170,12482,7342,12832,6247,598,11826,10131,470,326,53267,46561
+remove_top_10_risk_edges,12936,12214,6988,12540,5880,572,10398,8612,432,288,47327,40687
+remove_top_20_risk_edges,12041,11286,6100,11365,4964,545,9450,7594,417,273,41544,34977
+remove_top_50_risk_edges,10243,9397,5550,9184,4355,475,6566,4575,371,230,32826,26466
+remove_opacity_lexical_proxy,12826,12018,6478,12671,5462,557,11576,9866,399,274,50463,44852

@@ -1,0 +1,9 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+(none),9089,9083,8545,32861,1617,3739,4533,2527,1807,275
+Asia,4371,4371,4267,22904,1540,2600,2058,2257,856,134
+Europe,2588,2588,2501,13277,1107,1388,1018,1558,361,72
+North America,1326,1326,1280,6923,572,697,535,855,156,34
+Africa,526,526,515,2813,232,325,188,344,64,14
+South America,463,463,455,2519,215,275,168,316,51,10
+Arctic/Polar,411,411,371,1719,158,115,215,205,15,4
+Oceania,399,399,386,2107,164,224,156,249,40,9

@@ -1,0 +1,17 @@
+{
+  "gemini(current)": {
+    "merge_groups": 26,
+    "merged_away": 40,
+    "isa": 131
+  },
+  "gpt-5.4": {
+    "merge_groups": 12,
+    "merged_away": 16,
+    "isa": 154
+  },
+  "claude-opus-4-8": {
+    "merge_groups": 22,
+    "merged_away": 29,
+    "isa": 132
+  }
+}

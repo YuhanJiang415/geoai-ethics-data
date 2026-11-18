@@ -1,0 +1,104 @@
+{
+ "mode": "ablation",
+ "baseline": "nokg",
+ "structural": {
+  "nokg": {
+   "n_papers_with_triples": 100,
+   "n_triples": 794,
+   "mean_triples_per_paper": 7.94,
+   "connected_rate_mean": 0.997,
+   "closure_rate_mean": 0.992,
+   "provenance": {
+    "inferred": 794
+   },
+   "graph_grounded_triples": 0,
+   "graph_grounded_rate": 0.0,
+   "instantiation": {
+    "INSTANTIATED": 247,
+    "POTENTIAL": 536,
+    "NOT_TRIGGERED": 11
+   }
+  },
+  "run2": {
+   "n_papers_with_triples": 100,
+   "n_triples": 618,
+   "mean_triples_per_paper": 6.18,
+   "connected_rate_mean": 0.96,
+   "closure_rate_mean": 0.952,
+   "provenance": {
+    "graph_anchored": 168,
+    "graph_exact": 239,
+    "inferred": 211
+   },
+   "graph_grounded_triples": 407,
+   "graph_grounded_rate": 0.659,
+   "instantiation": {
+    "POTENTIAL": 419,
+    "INSTANTIATED": 178,
+    "NOT_TRIGGERED": 21
+   }
+  },
+  "run3": {
+   "n_papers_with_triples": 99,
+   "n_triples": 622,
+   "mean_triples_per_paper": 6.22,
+   "connected_rate_mean": 0.963,
+   "closure_rate_mean": 0.955,
+   "provenance": {
+    "graph_anchored": 207,
+    "graph_exact": 215,
+    "inferred": 200
+   },
+   "graph_grounded_triples": 422,
+   "graph_grounded_rate": 0.678,
+   "instantiation": {
+    "INSTANTIATED": 192,
+    "POTENTIAL": 413,
+    "NOT_TRIGGERED": 17
+   }
+  }
+ },
+ "ratings": {
+  "nokg": {
+   "file": "ratings_claude-opus-4-8_2026-07-12.json",
+   "scored_triples": 767,
+   "total_triples": 794,
+   "ground": {
+    "pass": 758,
+    "n": 767,
+    "pct": 99
+   },
+   "causal": {
+    "pass": 764,
+    "n": 767,
+    "pct": 100
+   },
+   "verdict": {
+    "pass": 717,
+    "n": 767,
+    "pct": 93
+   }
+  },
+  "run2": {
+   "file": "ratings_claude-opus-4-8_2026-07-12.json",
+   "scored_triples": 560,
+   "total_triples": 618,
+   "ground": {
+    "pass": 550,
+    "n": 560,
+    "pct": 98
+   },
+   "causal": {
+    "pass": 559,
+    "n": 560,
+    "pct": 100
+   },
+   "verdict": {
+    "pass": 517,
+    "n": 560,
+    "pct": 92
+   }
+  }
+ },
+ "caveat": "Clean ablation: baseline(nokg) and run2/run3 are all the FAST agent, same-era (quote-fix, Jul-1 graph); only Track-1 KG is toggled. Claude judge shows KG on-vs-off is a WASH on correctness (ground 99% vs 98%, causal 100% vs 100%, verdict 93% vs 92%). The KG's effect is NOT on per-triple correctness (both hug the paper via verbatim quotes) but on (a) PROVENANCE: 66-68% of KG-on triples are graph-anchored vs 0% for baseline, and (b) SELECTIVITY: KG-on emits ~22% fewer triples at equal correctness. Do NOT reuse the older Run1(full, quote-bug) ratings for this comparison -- 4 confounds. Ground-by-provenance within run2: inferred 100%, graph_anchored 99%, graph_exact 96% (KG occasionally over-reaches slightly)."
+}

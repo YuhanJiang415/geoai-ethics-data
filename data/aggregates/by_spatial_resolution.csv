@@ -1,0 +1,6 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+(none),9284,9278,8719,34010,1873,3807,4644,2776,1539,288
+HR (1-10 m),5423,5423,5267,27554,1827,3040,2377,2798,1247,149
+MR (10-100 m),1811,1811,1754,9263,798,962,606,1227,160,36
+VHR (<1 m),1784,1784,1735,9991,654,1188,778,932,501,54
+LR (>100 m),1341,1341,1302,6834,510,696,554,809,164,33

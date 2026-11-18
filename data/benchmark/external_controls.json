@@ -1,0 +1,240 @@
+{
+  "description": "Aggregate external controls; no paper-level audit outputs. Rates are proportions. A compares screened non-AI EO abstracts with a journal-year weighted main-corpus abstract comparator. D is majority vote over three runs; T_inst was pre-specified and includes mitigation edges, while T_inst_risk and T_inst_ei are post hoc risk-only outcomes.",
+  "A": {
+    "n_A": 100,
+    "n_main": 9789,
+    "metrics": {
+      "any": {
+        "A": 0.45,
+        "A_ci": [
+          0.3561437510640347,
+          0.5475557296835656
+        ],
+        "main_weighted": 0.9390377673669191,
+        "diff": -0.4890377673669191,
+        "diff_ci": [
+          -0.5881195428976979,
+          -0.38972554005555693
+        ]
+      },
+      "risk": {
+        "A": 0.43,
+        "A_ci": [
+          0.3373313900052838,
+          0.5278478830413564
+        ],
+        "main_weighted": 0.9278262763644831,
+        "diff": -0.4978262763644831,
+        "diff_ci": [
+          -0.5969146113583437,
+          -0.3988795233610908
+        ]
+      },
+      "inst": {
+        "A": 0.07,
+        "A_ci": [
+          0.0343188243640641,
+          0.13749671006529754
+        ],
+        "main_weighted": 0.5463983581945975,
+        "diff": -0.47639835819459747,
+        "diff_ci": [
+          -0.5233118365193866,
+          -0.42215551736911305
+        ]
+      },
+      "ai_risk": {
+        "A": 0.27,
+        "A_ci": [
+          0.1926946091766482,
+          0.36432300226231273
+        ],
+        "main_weighted": 0.8586943598911319,
+        "diff": -0.5886943598911318,
+        "diff_ci": [
+          -0.672509106349892,
+          -0.4997445041783206
+        ]
+      }
+    },
+    "ai_edge_share": {
+      "A": 0.42857142857142855,
+      "main_weighted": 0.652979723800551
+    },
+    "triples_per_paper": {
+      "A": 1.35,
+      "main_weighted": 3.5139600155306576
+    },
+    "risk_edges_per_paper": {
+      "A": 1.12,
+      "main_weighted": 3.234921283259649
+    }
+  },
+  "C": {
+    "n": 25,
+    "any": 0,
+    "any_ci": [
+      0.0,
+      0.13319649395317873
+    ],
+    "risk": 0,
+    "inst": 0,
+    "out_of_domain": 25
+  },
+  "D_combined": {
+    "n_runs": 3,
+    "n_pairs": 30,
+    "metrics": {
+      "T_inst": {
+        "risk": 0.7333333333333333,
+        "safe": 0.23333333333333334,
+        "diff_ci": [
+          0.3,
+          0.7
+        ],
+        "correct": 16,
+        "reversed": 1,
+        "both": 6,
+        "neither": 7,
+        "p": 0.0001373291015625,
+        "within_version_disagreement": {
+          "risk": 0.43333333333333335,
+          "safe": 0.5333333333333333
+        },
+        "pairs_correct_in_all_runs": 4,
+        "by_family": {
+          "EconomicLoss": {
+            "pairs": 5,
+            "risk": 3,
+            "safe": 2,
+            "correct": 1
+          },
+          "EqualRightsViolation": {
+            "pairs": 8,
+            "risk": 5,
+            "safe": 0,
+            "correct": 5
+          },
+          "PhysicalHarm": {
+            "pairs": 6,
+            "risk": 4,
+            "safe": 5,
+            "correct": 0
+          },
+          "PrivacyViolation": {
+            "pairs": 8,
+            "risk": 8,
+            "safe": 0,
+            "correct": 8
+          },
+          "PsychologicalHarm": {
+            "pairs": 3,
+            "risk": 2,
+            "safe": 0,
+            "correct": 2
+          }
+        }
+      },
+      "T_inst_risk": {
+        "risk": 0.7333333333333333,
+        "safe": 0.2,
+        "diff_ci": [
+          0.36666666666666664,
+          0.7
+        ],
+        "correct": 16,
+        "reversed": 0,
+        "both": 6,
+        "neither": 8,
+        "p": 1.52587890625e-05,
+        "within_version_disagreement": {
+          "risk": 0.43333333333333335,
+          "safe": 0.3333333333333333
+        },
+        "pairs_correct_in_all_runs": 6,
+        "by_family": {
+          "EconomicLoss": {
+            "pairs": 5,
+            "risk": 3,
+            "safe": 2,
+            "correct": 1
+          },
+          "EqualRightsViolation": {
+            "pairs": 8,
+            "risk": 5,
+            "safe": 0,
+            "correct": 5
+          },
+          "PhysicalHarm": {
+            "pairs": 6,
+            "risk": 4,
+            "safe": 4,
+            "correct": 0
+          },
+          "PrivacyViolation": {
+            "pairs": 8,
+            "risk": 8,
+            "safe": 0,
+            "correct": 8
+          },
+          "PsychologicalHarm": {
+            "pairs": 3,
+            "risk": 2,
+            "safe": 0,
+            "correct": 2
+          }
+        }
+      },
+      "T_inst_ei": {
+        "risk": 0.4666666666666667,
+        "safe": 0.03333333333333333,
+        "diff_ci": [
+          0.26666666666666666,
+          0.6
+        ],
+        "correct": 13,
+        "reversed": 0,
+        "both": 1,
+        "neither": 16,
+        "p": 0.0001220703125,
+        "within_version_disagreement": {
+          "risk": 0.3,
+          "safe": 0.13333333333333333
+        },
+        "pairs_correct_in_all_runs": 7,
+        "by_family": {
+          "EconomicLoss": {
+            "pairs": 5,
+            "risk": 0,
+            "safe": 0,
+            "correct": 0
+          },
+          "EqualRightsViolation": {
+            "pairs": 8,
+            "risk": 1,
+            "safe": 0,
+            "correct": 1
+          },
+          "PhysicalHarm": {
+            "pairs": 6,
+            "risk": 4,
+            "safe": 1,
+            "correct": 3
+          },
+          "PrivacyViolation": {
+            "pairs": 8,
+            "risk": 8,
+            "safe": 0,
+            "correct": 8
+          },
+          "PsychologicalHarm": {
+            "pairs": 3,
+            "risk": 1,
+            "safe": 0,
+            "correct": 1
+          }
+        }
+      }
+    }
+  }
+}

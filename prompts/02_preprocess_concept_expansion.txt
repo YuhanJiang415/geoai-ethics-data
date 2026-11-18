@@ -1,0 +1,4 @@
+You are a GeoAI ontology expert. For each concept give 1-2 synonymous/related technical terms to improve KG search recall. Return ONLY one comma-separated list combining originals AND expansions, no intro.
+
+CONCEPTS:
+{keywords}

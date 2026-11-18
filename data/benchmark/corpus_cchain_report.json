@@ -1,0 +1,61 @@
+{
+ "mode": "corpus_cchain",
+ "metric": "compute_c_chain (benchmark.py); per-paper mean, then micro-combined",
+ "note": "connected_rate = MAIN structural score (edge shares endpoint entity with another edge). closure_rate = DIAGNOSTIC (old closed TF->RM->EI spine).",
+ "per_source": {
+  "tgrs_abstract": {
+   "n_papers_total": 7219,
+   "n_papers_with_triples": 6793,
+   "connected_rate_mean": 0.919,
+   "closure_rate_mean": 0.949,
+   "src_file": "tgrs_abstract_raw.json"
+  },
+  "jstars_abstract": {
+   "n_papers_total": 2592,
+   "n_papers_with_triples": 2425,
+   "connected_rate_mean": 0.906,
+   "closure_rate_mean": 0.949,
+   "src_file": "jstars_abstract_raw.json"
+  },
+  "tgrs_geoai": {
+   "n_papers_total": 434,
+   "n_papers_with_triples": 422,
+   "connected_rate_mean": 0.958,
+   "closure_rate_mean": 0.965,
+   "src_file": "tgrs_geoai_raw.json"
+  },
+  "jstars_geoai": {
+   "n_papers_total": 1248,
+   "n_papers_with_triples": 1230,
+   "connected_rate_mean": 0.954,
+   "closure_rate_mean": 0.962,
+   "src_file": "jstars_geoai_raw.json"
+  },
+  "isprs_geoai": {
+   "n_papers_total": 1316,
+   "n_papers_with_triples": 1259,
+   "connected_rate_mean": 0.962,
+   "closure_rate_mean": 0.957,
+   "src_file": "isprs_geoai_raw.json"
+  },
+  "jag_geoai": {
+   "n_papers_total": 1553,
+   "n_papers_with_triples": 1520,
+   "connected_rate_mean": 0.96,
+   "closure_rate_mean": 0.963,
+   "src_file": "jag_geoai_raw.json"
+  },
+  "rse_geoai": {
+   "n_papers_total": 1124,
+   "n_papers_with_triples": 1081,
+   "connected_rate_mean": 0.971,
+   "closure_rate_mean": 0.952,
+   "src_file": "rse_geoai_raw.json"
+  }
+ },
+ "combined": {
+  "n_papers_with_triples": 14730,
+  "connected_rate_mean": 0.933,
+  "closure_rate_mean": 0.953
+ }
+}

@@ -1,0 +1,61 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+(none)|(none),3390,3386,3148,10381,513,935,1847,815,593,72
+(none)|scene / image classification,1602,1601,1512,5882,343,785,737,430,201,108
+Global South|forestry / vegetation,1514,1514,1478,8098,566,919,585,907,263,40
+Global North; Global South|forestry / vegetation,1125,1125,1102,6241,499,695,410,745,168,22
+(none)|super-resolution / restoration,1086,1086,1026,4028,180,356,546,319,346,45
+Global South|land cover / land use,1054,1054,1034,5935,399,733,403,631,194,41
+Global South|atmosphere / climate,1014,1014,989,5134,385,539,416,635,95,21
+(none)|semantic segmentation,997,997,943,4337,193,637,390,300,243,29
+Global North|forestry / vegetation,997,997,948,4955,475,440,294,691,111,20
+Global South|semantic segmentation,860,860,849,4968,311,603,429,410,263,26
+Global South|scene / image classification,853,853,836,4738,337,551,364,472,183,34
+Global North; Global South|atmosphere / climate,837,837,821,4574,413,450,307,608,80,11
+(none)|object detection,823,823,794,3719,183,458,446,225,260,11
+Global North; Global South|land cover / land use,820,820,807,4671,365,555,291,536,130,19
+(none)|change detection,771,771,751,3790,173,537,379,310,153,12
+(none)|forestry / vegetation,746,746,683,2902,217,264,275,382,96,14
+Global North|atmosphere / climate,723,723,690,3547,336,291,238,508,45,14
+Global South|object detection,649,649,645,3794,246,440,352,287,218,14
+Global North|land cover / land use,635,635,606,3274,304,323,181,433,69,25
+Global South|disaster / hazard,635,635,626,3574,253,407,372,315,111,12
+(none)|atmosphere / climate,618,618,575,2231,167,188,336,268,36,7
+(none)|land cover / land use,616,615,588,2727,163,378,236,244,88,39
+Global North; Global South|scene / image classification,615,615,605,3516,271,410,255,384,117,20
+Global South|water / hydrology,550,550,542,2932,222,305,225,362,81,11
+Global South|change detection,533,533,528,3231,212,389,255,310,123,18
+Global South|super-resolution / restoration,514,514,506,2820,195,319,266,263,127,18
+Global North; Global South|semantic segmentation,510,510,505,3036,238,369,226,274,117,9
+(none)|disaster / hazard,480,480,465,2069,115,241,316,134,102,12
+Global North; Global South|disaster / hazard,467,467,456,2724,219,327,249,263,66,11
+Global North|scene / image classification,457,457,430,2367,215,232,138,303,64,18
+Global South|building / urban extraction,427,427,423,2564,160,346,201,210,113,20
+Global North; Global South|water / hydrology,421,421,408,2276,204,229,165,279,43,6
+Global North; Global South|change detection,355,355,350,2094,147,272,165,200,66,8
+Global North; Global South|object detection,345,345,340,2060,152,236,167,188,105,4
+Global North|disaster / hazard,328,328,322,1750,148,170,157,193,45,10
+Global South|(none),322,322,300,1209,63,117,164,119,55,6
+Global North|semantic segmentation,313,313,303,1677,141,191,120,163,61,11
+Global North; Global South|building / urban extraction,310,310,309,1918,135,261,128,162,82,6
+Global South|agriculture / crop,299,299,293,1578,124,153,69,236,51,1
+Global North; Global South|agriculture / crop,288,288,284,1541,135,144,60,243,37,2
+Global North; Global South|super-resolution / restoration,287,287,279,1615,109,200,131,150,71,14
+Global North|agriculture / crop,263,263,252,1357,132,105,49,213,27,2
+Global North|water / hydrology,253,253,241,1235,116,106,84,179,20,4
+Global North|change detection,231,231,221,1161,104,130,67,142,35,7
+(none)|building / urban extraction,230,230,222,1165,48,177,118,74,55,6
+Global North|object detection,218,218,210,1195,95,136,79,119,55,7
+(none)|water / hydrology,199,199,189,837,58,70,77,124,18,4
+Global North|building / urban extraction,164,164,163,949,72,130,75,84,32,9
+Global North|super-resolution / restoration,161,161,159,909,69,96,74,107,29,9
+Global North|(none),128,128,117,446,29,34,75,44,13,1
+(none)|surveillance,118,118,115,428,16,42,78,18,41,1
+Global South|3D / reconstruction,114,114,112,595,25,60,56,41,56,4
+(none)|agriculture / crop,94,94,86,372,25,27,19,71,8,1
+Global South|surveillance,85,85,85,486,28,55,52,31,32,0
+Global North; Global South|3D / reconstruction,71,71,66,379,27,47,30,37,19,1
+(none)|3D / reconstruction,60,60,54,262,15,26,33,17,16,3
+Global North; Global South|(none),60,60,59,319,24,31,33,27,14,2
+Global North|3D / reconstruction,60,60,58,318,23,33,26,31,18,5
+Global North; Global South|surveillance,45,45,45,285,21,29,29,23,13,1
+Global North|surveillance,34,34,34,185,16,18,18,17,8,1

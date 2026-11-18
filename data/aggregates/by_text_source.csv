@@ -1,0 +1,4 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+abstract,9817,9811,9218,34599,1649,3911,4881,2777,1834,290
+fulltext,5524,5524,5367,29624,2242,3182,2417,3128,1012,156
+abstract (review),151,151,145,867,71,105,57,75,39,10

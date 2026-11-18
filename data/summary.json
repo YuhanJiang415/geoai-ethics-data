@@ -1,0 +1,22 @@
+{
+  "n_papers_corpus": 15492,
+  "n_papers_audited": 15486,
+  "n_papers_with_triples": 14730,
+  "n_triples": 65090,
+  "n_distinct_risk_mechanisms": 3730,
+  "n_distinct_ethical_impacts": 4627,
+  "share_ethical_keyword": 0.1615,
+  "instantiation_share": {
+    "POTENTIAL": 0.7263,
+    "INSTANTIATED": 0.2494,
+    "NOT_TRIGGERED": 0.0243
+  },
+  "provenance_share_edges_to_impact": {
+    "graph_exact": 0.7792,
+    "inferred": 0.1402,
+    "graph_anchored": 0.0805
+  },
+  "connected_rate": 0.933,
+  "closure_rate": 0.953,
+  "suppression_k_min": 5
+}

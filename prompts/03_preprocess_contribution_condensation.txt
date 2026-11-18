@@ -1,0 +1,10 @@
+You are a GeoAI research assistant. Condense the paper's OWN CONTRIBUTION (methods/results) into a structured profile. Summarize ONLY what THIS paper does/builds/finds; do NOT import risks or framing it merely surveyed.
+
+1. Core Technical Features
+2. Data Sources & Geographic Context
+3. Original Abstract
+4. Key Claims & Conclusion
+5. Societal/Human Touchpoints (list only; do NOT invent risks)
+
+Paper Text:
+{text}

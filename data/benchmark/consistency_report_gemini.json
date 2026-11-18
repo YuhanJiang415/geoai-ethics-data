@@ -1,0 +1,95 @@
+{
+ "mode": "consistency",
+ "runs": [
+  "gemini_nokg",
+  "gemini_run2",
+  "gemini_run3"
+ ],
+ "n_papers": 100,
+ "matching": {
+  "semantic_embed": true,
+  "emb_threshold": 0.8,
+  "note": "semantic Jaccard uses _entities_match with embedding fallback (mpnet); exact_sig is the pure-lexical strict lower bound."
+ },
+ "per_run": {
+  "gemini_nokg": {
+   "n_papers": 100,
+   "n_triples": 794,
+   "mean_triples_per_paper": 7.94,
+   "std_triples_per_paper": 2.26
+  },
+  "gemini_run2": {
+   "n_papers": 100,
+   "n_triples": 618,
+   "mean_triples_per_paper": 6.18,
+   "std_triples_per_paper": 2.4
+  },
+  "gemini_run3": {
+   "n_papers": 100,
+   "n_triples": 622,
+   "mean_triples_per_paper": 6.22,
+   "std_triples_per_paper": 2.13
+  }
+ },
+ "pairwise": {
+  "gemini_nokg|gemini_run2": {
+   "jaccard_harm_micro": 0.546,
+   "jaccard_harm_perpaper_mean": 0.583,
+   "jaccard_concept_micro": 0.033,
+   "jaccard_triple_micro": 0.003,
+   "jaccard_triple_exact_sig_micro": 0.0
+  },
+  "gemini_nokg|gemini_run3": {
+   "jaccard_harm_micro": 0.512,
+   "jaccard_harm_perpaper_mean": 0.553,
+   "jaccard_concept_micro": 0.039,
+   "jaccard_triple_micro": 0.001,
+   "jaccard_triple_exact_sig_micro": 0.0
+  },
+  "gemini_run2|gemini_run3": {
+   "jaccard_harm_micro": 0.563,
+   "jaccard_harm_perpaper_mean": 0.6,
+   "jaccard_concept_micro": 0.137,
+   "jaccard_triple_micro": 0.055,
+   "jaccard_triple_exact_sig_micro": 0.034
+  }
+ },
+ "stability": {
+  "harm_family": {
+   "total": 306,
+   "in_all_runs": 117,
+   "nway_rate": 0.382,
+   "presence_histogram": {
+    "in_1_runs": 96,
+    "in_2_runs": 93,
+    "in_3_runs": 117
+   }
+  },
+  "concept": {
+   "total": 2469,
+   "in_all_runs": 29,
+   "nway_rate": 0.012,
+   "presence_histogram": {
+    "in_1_runs": 2170,
+    "in_2_runs": 270,
+    "in_3_runs": 29
+   }
+  },
+  "triple": {
+   "total": 1947,
+   "in_all_runs": 0,
+   "nway_rate": 0.0,
+   "presence_histogram": {
+    "in_1_runs": 1877,
+    "in_2_runs": 70,
+    "in_3_runs": 0
+   }
+  },
+  "triple_attribute_agreement_among_shared": {
+   "relation": 0.986,
+   "instantiation": 0.829,
+   "provenance": 0.929
+  }
+ },
+ "caveat": "Read granularities together: the audit is consistent about WHICH harms a paper raises (harm_family) but decomposes the causal chain differently each run (triple), so triple-level Jaccard understates real agreement. CLEAN comparison = run2_fast vs run3_fast (identical config). run1_full used the FULL agent on an OLDER graph (pre Jul-1) and emits ~40% fewer triples, so any pair involving run1_full mixes config differences with run-to-run variance."
+}

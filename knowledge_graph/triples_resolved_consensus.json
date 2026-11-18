@@ -1,0 +1,3872 @@
+[
+ {
+  "head": {
+   "entity": "adversarial perturbations",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "inference stage of machine learning models"
+  },
+  "tail": {
+   "entity": "misleading machine learning models to yield incorrect predictions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "misleading machine learning models to yield incorrect predictions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "safety-critical geoscience and remote sensing tasks"
+  },
+  "tail": {
+   "entity": "safety risks in safety-critical earth observation missions",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "data poisoning with specific triggers",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "training stage of machine learning models"
+  },
+  "tail": {
+   "entity": "induction of malicious mappings between triggers and target labels",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "induction of malicious mappings between triggers and target labels",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "autonomous driving and high-stakes transportation"
+  },
+  "tail": {
+   "entity": "accidental harm due to malicious misclassification",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "federated learning",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "decentralized data distribution"
+  },
+  "tail": {
+   "entity": "unauthorized sharing or migration of sensitive geospatial data",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "unauthorized sharing or migration of sensitive geospatial data",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "non-public data associated with industry or national security"
+  },
+  "tail": {
+   "entity": "violation of geospatial data privacy and sensitivity",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "black-box nature of deep neural networks",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "lack of algorithmic transparency and explainability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "lack of algorithmic transparency and explainability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "high-risk remote sensing applications"
+  },
+  "tail": {
+   "entity": "threats to safety and robustness in high-risk missions",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "uncertainty quantification",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "high-risk remote sensing applications"
+  },
+  "tail": {
+   "entity": "unreliability of algorithmic predictions in safety-critical tasks",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "unreliability of algorithmic predictions in safety-critical tasks",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Earth observation imaging process"
+  },
+  "tail": {
+   "entity": "systemic failure in disaster or safety monitoring",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf",
+  "chain_id": "AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "ai systems trained on non-representative data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When the machine learning workflow lacks oversight of data diversity"
+  },
+  "tail": {
+   "entity": "reinforcing or perpetuating discriminatory applications",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "reinforcing or perpetuating discriminatory applications",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "systematic discrimination of individuals or population sub-groups",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "high-resolution uav imagery",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When resolution is fine enough to discern individuals"
+  },
+  "tail": {
+   "entity": "accidental revelation of sensitive information",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "accidental revelation of sensitive information",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "violation of location behavior and association privacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "classification of informal settlements and slums",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When sensitive maps are published without care for local consequences"
+  },
+  "tail": {
+   "entity": "territorial stigmatization",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "territorial stigmatization",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When stigmatization affects public perception and policy"
+  },
+  "tail": {
+   "entity": "exposure to forced eviction",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "adversarial perturbations",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In the context of automated driving or critical image classification"
+  },
+  "tail": {
+   "entity": "prediction of incorrect results in high-risk grs applications",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "prediction of incorrect results in high-risk grs applications",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When applied to safety-critical missions like disaster response"
+  },
+  "tail": {
+   "entity": "threats to human safety in emergency situations",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "downgrading map spatial resolution",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "When handling sensitive applications like slum mapping"
+  },
+  "tail": {
+   "entity": "revelation of sensitive personal information",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "explainable ai xai",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "In high-risk GRS applications"
+  },
+  "tail": {
+   "entity": "hidden security hazards in black box models",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf",
+  "chain_id": "RESPONSIBLE AI FOR EARTH OBSERVATION.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "smartphone location tracking",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When providers acquire and aggregate user locations for third parties without meaningful consent."
+  },
+  "tail": {
+   "entity": "surreptitious surveillance",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf",
+  "chain_id": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "surreptitious surveillance",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In the context of geoslavery and automated monitoring of individuals."
+  },
+  "tail": {
+   "entity": "location-based privacy violation",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf",
+  "chain_id": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "vgi and opportunistic data collection",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When data collection depends on access to technology like smartphones or interest in volunteering data."
+  },
+  "tail": {
+   "entity": "sampling bias toward dominant cultures",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf",
+  "chain_id": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "sampling bias toward dominant cultures",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When data excludes children, older adults, homeless individuals, or people with disabilities."
+  },
+  "tail": {
+   "entity": "exclusion of marginalized groups from knowledge production",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf",
+  "chain_id": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "black-box spatial analysis",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When complex multidimensional geographic variables are processed without transparent guardrails."
+  },
+  "tail": {
+   "entity": "inadvertent inferential error",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf",
+  "chain_id": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "inadvertent inferential error",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In the absence of ethical guides to provide checks and balances on data and methods."
+  },
+  "tail": {
+   "entity": "amplification of social disparities",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf",
+  "chain_id": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "data integration and modeling",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "When used to correct bias in crowdsourced or VGI datasets by combining multiple data sources."
+  },
+  "tail": {
+   "entity": "sampling bias toward dominant cultures",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf",
+  "chain_id": "nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "lack of geographic diversity in training and evaluation corpora",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When using global datasets like Wikipedia or social media (GeoCorpora) for GeoAI training"
+  },
+  "tail": {
+   "entity": "representation bias in spatial data coverage",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "liu2022_geoparsing_biased.pdf",
+  "chain_id": "liu2022_geoparsing_biased.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "representation bias in spatial data coverage",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Across global and local scales"
+  },
+  "tail": {
+   "entity": "unequal quality of geoparsing services across geographic regions",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "liu2022_geoparsing_biased.pdf",
+  "chain_id": "liu2022_geoparsing_biased.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "non-spatially-explicit evaluation metrics precision recall f-score",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When performance is only measured as an aggregate overall score on a corpus"
+  },
+  "tail": {
+   "entity": "evaluation bias hiding regional variability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "liu2022_geoparsing_biased.pdf",
+  "chain_id": "liu2022_geoparsing_biased.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "evaluation bias hiding regional variability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In the deployment of geoparsers for downstream geospatial tasks"
+  },
+  "tail": {
+   "entity": "reduced reliability and fairness of geoai systems in underserved regions",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "liu2022_geoparsing_biased.pdf",
+  "chain_id": "liu2022_geoparsing_biased.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "population-based heuristics in toponym resolution",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "During place name disambiguation (toponym resolution)"
+  },
+  "tail": {
+   "entity": "algorithmic bias against low-population areas",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "liu2022_geoparsing_biased.pdf",
+  "chain_id": "liu2022_geoparsing_biased.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "algorithmic bias against low-population areas",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "systematic exclusion of smaller communities from accurate geographic representation",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "liu2022_geoparsing_biased.pdf",
+  "chain_id": "liu2022_geoparsing_biased.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "spatially-explicit performance evaluation hotcold spot detection",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "By exposing where a geoparser is biased towards or against"
+  },
+  "tail": {
+   "entity": "evaluation bias hiding regional variability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "liu2022_geoparsing_biased.pdf",
+  "chain_id": "liu2022_geoparsing_biased.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "unrepresentative geographic training data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When data is heavily skewed toward specific regions like North America and Europe"
+  },
+  "tail": {
+   "entity": "biased model predictions and rankings",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "biased model predictions and rankings",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In scenarios affecting resource allocation, safety classification, or visibility"
+  },
+  "tail": {
+   "entity": "geographic discrimination and social inequality",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "location data de-identification techniques",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "General use of anonymization on spatial datasets"
+  },
+  "tail": {
+   "entity": "re-identification of individuals from geospatial datasets",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "re-identification of individuals from geospatial datasets",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When de-identification is insufficient to protect sensitive location traces"
+  },
+  "tail": {
+   "entity": "location-based privacy violation",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "privacy by design data minimization",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "By reducing the volume of sensitive spatial data collected"
+  },
+  "tail": {
+   "entity": "re-identification of individuals from geospatial datasets",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "training of foundational and large-scale geoai models",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "For models requiring massive computational power and hardware infrastructure"
+  },
+  "tail": {
+   "entity": "high carbon dioxide emissions and resource depletion",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "high carbon dioxide emissions and resource depletion",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When resource use threatens long-term environmental sustainability and human life"
+  },
+  "tail": {
+   "entity": "environmental degradation and threat to future human life",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "green ai practices",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "When prioritizing computational efficiency over raw power"
+  },
+  "tail": {
+   "entity": "high carbon dioxide emissions and resource depletion",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "janowicz2023_philosophical_foundations.pdf",
+  "chain_id": "janowicz2023_philosophical_foundations.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "sparse spatiotemporal traces",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "re-identification and linkage",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "re-identification and linkage",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "location-based privacy violation",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "modifiable areal unit problem maup",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "geographic representational imbalance",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "geographic representational imbalance",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "inequitable social outcomes",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "geoai surveillance systems",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "surveillance and tracking misuse",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "surveillance and tracking misuse",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "violation of rights of the observed",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "map-visualization distortion",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "stigmatization of communities",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "stigmatization of communities",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "psychological harm from stigmatization",
+   "type": "EthicalImpact",
+   "harm_family": "PsychologicalHarm"
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "minimal data collection",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "When limiting spatial and temporal granularity"
+  },
+  "tail": {
+   "entity": "re-identification and linkage",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "privacy-preserving synthetic-trajectory generation",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "location-based privacy violation",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "An Operational Ethical Framework for GeoAI.pdf",
+  "chain_id": "An Operational Ethical Framework for GeoAI.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "mapping of mobile phone location data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "risk of user re-identification",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "risk of user re-identification",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "violation of individual locational privacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "context-sensitive best practices",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "When mapping sensitive populations or conflicted areas"
+  },
+  "tail": {
+   "entity": "risk of user re-identification",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "persistent biases within large datasets",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "exclusion of marginalized voices from spatial representation",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "exclusion of marginalized voices from spatial representation",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "systemic spatial injustice and inequity",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "participatory community-engaged standards of practice",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "When committed to by professional organizations"
+  },
+  "tail": {
+   "entity": "exclusion of marginalized voices from spatial representation",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "geospatial technologies in humanitarian evidence generation",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In development and crisis contexts"
+  },
+  "tail": {
+   "entity": "privacy breaches of at-risk populations",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "privacy breaches of at-risk populations",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When vulnerable populations are involved"
+  },
+  "tail": {
+   "entity": "threats to the physical safety of vulnerable groups",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "privacy-by-design methodologies",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "In humanitarian and crisis contexts"
+  },
+  "tail": {
+   "entity": "privacy breaches of at-risk populations",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Geospatial_Ethical_Frameworks.pdf",
+  "chain_id": "Geospatial_Ethical_Frameworks.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "ai-driven building detection and classification from remote sensing data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When training data contains sample imbalances for specific infrastructure types"
+  },
+  "tail": {
+   "entity": "misclassification of heterogeneous roof types",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ijgi-12-00393.pdf",
+  "chain_id": "ijgi-12-00393.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "misclassification of heterogeneous roof types",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When roof typology is used as a proxy for socio-economic status"
+  },
+  "tail": {
+   "entity": "discriminatory resource allocation in humanitarian aid",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "ijgi-12-00393.pdf",
+  "chain_id": "ijgi-12-00393.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "mosaicking disparate geodata using spatial references and ai",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When combining seemingly unrelated datasets creates new information products"
+  },
+  "tail": {
+   "entity": "unintentional sensitive knowledge discovery",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ijgi-12-00393.pdf",
+  "chain_id": "ijgi-12-00393.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "unintentional sensitive knowledge discovery",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "If detailed demographic clusters become accessible to the public"
+  },
+  "tail": {
+   "entity": "violation of group informational privacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "ijgi-12-00393.pdf",
+  "chain_id": "ijgi-12-00393.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "detailed temporal geodata collection",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In contexts of civil strife or contested territory"
+  },
+  "tail": {
+   "entity": "surveillance by malevolent groups or oppressive governments",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ijgi-12-00393.pdf",
+  "chain_id": "ijgi-12-00393.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "surveillance by malevolent groups or oppressive governments",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When humanitarian data serves the intelligence needs of antagonists"
+  },
+  "tail": {
+   "entity": "targeting of vulnerable communities for harm",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "ijgi-12-00393.pdf",
+  "chain_id": "ijgi-12-00393.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "geodata triage process",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "By identifying and prioritizing demographic identifier (DII) threats for intervention"
+  },
+  "tail": {
+   "entity": "informational harms from geodata technologies",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ijgi-12-00393.pdf",
+  "chain_id": "ijgi-12-00393.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "high-complexity geoai models",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "large-scale greenhouse gas emissions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "shi2023_geoai_sustainability.pdf",
+  "chain_id": "shi2023_geoai_sustainability.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "large-scale greenhouse gas emissions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Global scope affecting communities most vulnerable to climate change"
+  },
+  "tail": {
+   "entity": "climate change consequences affecting vulnerable populations",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "shi2023_geoai_sustainability.pdf",
+  "chain_id": "shi2023_geoai_sustainability.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "relocating computing centers to low-carbon regions",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Local regions where energy is generated"
+  },
+  "tail": {
+   "entity": "geographic displacement of environmental burden",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "shi2023_geoai_sustainability.pdf",
+  "chain_id": "shi2023_geoai_sustainability.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "geographic displacement of environmental burden",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Regions where local residents do not benefit from the trained model"
+  },
+  "tail": {
+   "entity": "environmental injustice and social burden on local residents",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "shi2023_geoai_sustainability.pdf",
+  "chain_id": "shi2023_geoai_sustainability.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "systematic reporting of sustainability indicators",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Follow-up GeoAI research and model adoption"
+  },
+  "tail": {
+   "entity": "large-scale greenhouse gas emissions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "shi2023_geoai_sustainability.pdf",
+  "chain_id": "shi2023_geoai_sustainability.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "geographic data scarcity in rural and remote areas",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When datasets fail to represent actual target regions"
+  },
+  "tail": {
+   "entity": "population target bias",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "remotesensing-16-04529.pdf",
+  "chain_id": "remotesensing-16-04529.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "population target bias",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In the context of land use and resource management"
+  },
+  "tail": {
+   "entity": "inequitable resource allocation and misclassification of vulnerable regions",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "remotesensing-16-04529.pdf",
+  "chain_id": "remotesensing-16-04529.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "black box ambiguities and complex model architectures",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When used by non-technical stakeholders or policymakers"
+  },
+  "tail": {
+   "entity": "misinterpretation of ai insights by decision-makers",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "remotesensing-16-04529.pdf",
+  "chain_id": "remotesensing-16-04529.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "misinterpretation of ai insights by decision-makers",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In high-stakes policy scenarios"
+  },
+  "tail": {
+   "entity": "inappropriate policy decisions impacting communities",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "remotesensing-16-04529.pdf",
+  "chain_id": "remotesensing-16-04529.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "process automation with reduced human intervention",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "automation bias",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "remotesensing-16-04529.pdf",
+  "chain_id": "remotesensing-16-04529.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "automation bias",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Overreliance on AI results without local expertise"
+  },
+  "tail": {
+   "entity": "misinterpretation or misuse of remote sensing data",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "remotesensing-16-04529.pdf",
+  "chain_id": "remotesensing-16-04529.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "structured evaluation framework and quantifiable metrics",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Implementation during AI development and deployment"
+  },
+  "tail": {
+   "entity": "unintentional biases and ethical risks in remote sensing",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "remotesensing-16-04529.pdf",
+  "chain_id": "remotesensing-16-04529.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "deep-learning algorithm for image segmentation beam",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When training data is specific to informal dwellings but applied to formal or industrial city areas.",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "algorithmic focus bias",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "algorithmic focus bias",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "When biased analytics are used to determine city-wide planning and service distribution.",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "unfair distribution of urban resources and services",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "automated detection of building footprints in informal settlements",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "If authorities use high-resolution mapping for enforcement rather than developmental support.",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "identification of vulnerable populations for law enforcement targeting",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "identification of vulnerable populations for law enforcement targeting",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "In contexts where data is used to facilitate the removal of informal dwellings.",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "enforced evictions and displacement",
+   "harm_family": "PhysicalHarm",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "expert reviews and community feedback loops",
+   "harm_family": null,
+   "type": "Mitigation"
+  },
+  "edge": {
+   "condition": "During the design and validation phases of GeoAI systems.",
+   "relation_type": "INHIBITS"
+  },
+  "tail": {
+   "entity": "exclusion or misrepresentation of vulnerable populations in datasets",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "exclusion or misrepresentation of vulnerable populations in datasets",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "When lack of local context leads to biased planning outcomes.",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "algorithmic marginalization and community exclusion",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "high computational requirements for ai model execution",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "In resource-constrained urban environments with limited digital infrastructure.",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "institutional digital and capability divide",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "institutional digital and capability divide",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "systemic exclusion from technological benefits",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Responsible_AI_for_Cities.pdf",
+  "chain_id": "Responsible_AI_for_Cities.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "biased training datasets from social data or crowdsourcing",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When used in urban planning applications"
+  },
+  "tail": {
+   "entity": "discrimination and unfair treatment of social groups",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "facial recognition systems",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In urban analysis and data collection tasks"
+  },
+  "tail": {
+   "entity": "violation of individual and group privacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "blackbox nature of ai-based models",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General urban geospatial AI implementation"
+  },
+  "tail": {
+   "entity": "model opacity and lack of interpretability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "model opacity and lack of interpretability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When impacting citizens' lives through planning decisions"
+  },
+  "tail": {
+   "entity": "violations of spatial justice and accountability",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "explainable ai xai methods",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Urban decision-making processes"
+  },
+  "tail": {
+   "entity": "model opacity and lack of interpretability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "participatory approaches and human-in-the-loop",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Throughout the development and deployment stages of planning support systems"
+  },
+  "tail": {
+   "entity": "overlooking of social and geographical significance",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "generative ai and ai-generated maps",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "In the validation and replication of cartographic research"
+  },
+  "tail": {
+   "entity": "inability to understand underlying geographic processes",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "inability to understand underlying geographic processes",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When AI-informed decisions impact livelihoods"
+  },
+  "tail": {
+   "entity": "economic loss from misinformation-driven planning",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "TowardsResponsibleUrban GeospatialAI.pdf",
+  "chain_id": "TowardsResponsibleUrban GeospatialAI.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "training data errors in ml-based mapping",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Mapping of Deprived Urban Areas (DUAs)"
+  },
+  "tail": {
+   "entity": "inaccurate classification and representation of urban areas",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "inaccurate classification and representation of urban areas",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "social stigmatisation of community members",
+   "type": "EthicalImpact",
+   "harm_family": "PsychologicalHarm"
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "ai-assisted mapping and monitoring",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When visibility is exploited by malicious actors"
+  },
+  "tail": {
+   "entity": "malicious use of spatial data and representations",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "malicious use of spatial data and representations",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "discrimination against vulnerable communities",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "ai and geographic information technologies",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Collection without subject knowledge"
+  },
+  "tail": {
+   "entity": "invasive collection and monitoring of personal information",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "invasive collection and monitoring of personal information",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "infringement on personal privacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "data protection impact assessments dpia",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Processing of personal data likely to result in high risk"
+  },
+  "tail": {
+   "entity": "risk to the rights and freedoms of individuals",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "engagement with local populations",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Humanitarian and urban mapping projects"
+  },
+  "tail": {
+   "entity": "loss of privacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "data minimization and abstraction",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "infringement on personal privacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "biased machine learning datasets",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Encoded biases in healthcare or social systems"
+  },
+  "tail": {
+   "entity": "discriminatory allocation of resources",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain006"
+ },
+ {
+  "head": {
+   "entity": "discriminatory allocation of resources",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Based on socioeconomic status or ethnicity"
+  },
+  "tail": {
+   "entity": "deprivation of economic resources",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "Crossing_Boundaries.pdf",
+  "chain_id": "Crossing_Boundaries.pdf::chain006"
+ },
+ {
+  "head": {
+   "entity": "geoai models utilizing location data",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When location is used as a proxy for social demographics",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "collinearity between geographic location and protected characteristics raceethnicity",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf",
+  "chain_id": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "collinearity between geographic location and protected characteristics raceethnicity",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "racial and income-based discrimination",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf",
+  "chain_id": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "explainable ai xai results",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When explaining outcomes involving marginalized groups",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "exposure of sensitive group data facilitating re-identification",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf",
+  "chain_id": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "exposure of sensitive group data facilitating re-identification",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "violation of individual and group privacy",
+   "harm_family": "PrivacyViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf",
+  "chain_id": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "manipulation of xai methods",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "obfuscation of underlying algorithmic bias",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf",
+  "chain_id": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "obfuscation of underlying algorithmic bias",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "undetected discriminatory outcomes in geoai applications",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf",
+  "chain_id": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "explainable ai xai",
+   "harm_family": null,
+   "type": "Mitigation"
+  },
+  "edge": {
+   "condition": "When used to audit models for fairness",
+   "relation_type": "INHIBITS"
+  },
+  "tail": {
+   "entity": "racial discrimination in predictive policing",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf",
+  "chain_id": "Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "recursive training on synthetic geospatial data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When AI-generated images or model-derived analytical outputs are used as training data for subsequent generations without screening."
+  },
+  "tail": {
+   "entity": "geoai collapse",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "GeoAI_collapse.pdf",
+  "chain_id": "GeoAI_collapse.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "geoai collapse",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "During multigenerational training cycles where models amplify dominant statistical patterns and filter out rare features."
+  },
+  "tail": {
+   "entity": "systemic bias against rare or minority place-based features",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "GeoAI_collapse.pdf",
+  "chain_id": "GeoAI_collapse.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "unscreened synthetic geospatial data in public repositories",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When AI-generated contributions (e.g., in OSM) are unmarked and lack metadata indicating their artificial origin."
+  },
+  "tail": {
+   "entity": "inability of data users to provide informed consent",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "GeoAI_collapse.pdf",
+  "chain_id": "GeoAI_collapse.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "algorithmic recursion and data abstraction",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "As AI-generated representations progressively abstract the lived realities of place into reproducible data patterns."
+  },
+  "tail": {
+   "entity": "digital placelessness and erosion of geographic specificity",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "GeoAI_collapse.pdf",
+  "chain_id": "GeoAI_collapse.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "provenance-aware evaluation protocols and curation",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "By tagging data origins and documenting the proportion of synthetic data in training sets."
+  },
+  "tail": {
+   "entity": "geoai collapse",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "GeoAI_collapse.pdf",
+  "chain_id": "GeoAI_collapse.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "surveillance and tracking measures",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "During the COVID-19 pandemic"
+  },
+  "tail": {
+   "entity": "privacy violations",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "wei2025_ai_ethics_twitter.pdf",
+  "chain_id": "wei2025_ai_ethics_twitter.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "ai technology",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Development lacking integration with the humanities"
+  },
+  "tail": {
+   "entity": "gender bias",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "wei2025_ai_ethics_twitter.pdf",
+  "chain_id": "wei2025_ai_ethics_twitter.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "gender bias",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "gender discrimination",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "wei2025_ai_ethics_twitter.pdf",
+  "chain_id": "wei2025_ai_ethics_twitter.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "opacity in decision-making processes black-box effect",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Lagging development of AI-related laws and acceptance"
+  },
+  "tail": {
+   "entity": "potential privacy risks",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "wei2025_ai_ethics_twitter.pdf",
+  "chain_id": "wei2025_ai_ethics_twitter.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "artificial intelligence act eu ai act",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Implementation of a comprehensive legislative attempt"
+  },
+  "tail": {
+   "entity": "risks of artificial intelligence",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "wei2025_ai_ethics_twitter.pdf",
+  "chain_id": "wei2025_ai_ethics_twitter.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "ai creative tools",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Ambiguity in ownership of AI-generated content"
+  },
+  "tail": {
+   "entity": "intellectual property complications",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "wei2025_ai_ethics_twitter.pdf",
+  "chain_id": "wei2025_ai_ethics_twitter.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "predictive policing using spatio-temporal analysis",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Neighborhood level"
+  },
+  "tail": {
+   "entity": "spatially biased data over- or under-representation of neighborhoods",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "eu_ai_act_geoai_auditing.pdf",
+  "chain_id": "eu_ai_act_geoai_auditing.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "spatially biased data over- or under-representation of neighborhoods",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Neighborhood level"
+  },
+  "tail": {
+   "entity": "amplification of societal inequities through discriminatory policing",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "eu_ai_act_geoai_auditing.pdf",
+  "chain_id": "eu_ai_act_geoai_auditing.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "geoai for flood vulnerability mapping and disaster management",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Rural or impoverished regions"
+  },
+  "tail": {
+   "entity": "representation bias false negatives for buildings in rural or poor areas",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "eu_ai_act_geoai_auditing.pdf",
+  "chain_id": "eu_ai_act_geoai_auditing.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "representation bias false negatives for buildings in rural or poor areas",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Rural or impoverished regions"
+  },
+  "tail": {
+   "entity": "denial of resources or delayed emergency aid to marginalized populations",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "eu_ai_act_geoai_auditing.pdf",
+  "chain_id": "eu_ai_act_geoai_auditing.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "data governance and bias audits article 10 eu ai act",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "High-risk systems under Annex III"
+  },
+  "tail": {
+   "entity": "use of non-representative or error-prone geospatial datasets in high-risk systems",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "eu_ai_act_geoai_auditing.pdf",
+  "chain_id": "eu_ai_act_geoai_auditing.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "human oversight article 14 eu ai act",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "High-risk automated decision systems"
+  },
+  "tail": {
+   "entity": "over-reliance on biased or erroneous automated geoai decisions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "eu_ai_act_geoai_auditing.pdf",
+  "chain_id": "eu_ai_act_geoai_auditing.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "mobility behavior analysis",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When mobility patterns uniquely characterize an individual",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "re-identification from anonymous data",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "re-identification from anonymous data",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "When anonymous datasets are publicly shared without sufficient protection",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "location-based privacy violation",
+   "harm_family": "PrivacyViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "co-location analysis",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When neighbors or contacts share personal socio-demographic information",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "inference of personal characteristics from proximity",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "inference of personal characteristics from proximity",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "When an individual has no control over the data disclosure of those in close proximity",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "interdependent privacy violation",
+   "harm_family": "PrivacyViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "location-based services and gnss",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When used as a mechanism for external surveillance and authority",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "geoslavery",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "geoslavery",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "When technology is leveraged to exert coercive control over individual movement and autonomy",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "violation of individual liberty and autonomy",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "predictive ai modeling for crime",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When biased input data or model designs are employed",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "incorrect identification of individuals as criminals",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "incorrect identification of individuals as criminals",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "When models impact law enforcement actions and judicial outcomes",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "violation of due process and equal rights",
+   "harm_family": "EqualRightsViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "ai risk estimation models",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When applied to health insurance rate setting",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "individual risk profiling based on location and driving data",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "individual risk profiling based on location and driving data",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "economic loss from increased insurance costs",
+   "harm_family": "EconomicLoss",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "geomasking and spatial-temporal cloaking",
+   "harm_family": null,
+   "type": "Mitigation"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "INHIBITS"
+  },
+  "tail": {
+   "entity": "privacy exposure of location data",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "large language models",
+   "harm_family": null,
+   "type": "TechnicalFeature"
+  },
+  "edge": {
+   "condition": "When trained on massive volumes of geographic text and contextual data",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "inference of mobility patterns and re-identification",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain006"
+ },
+ {
+  "head": {
+   "entity": "inference of mobility patterns and re-identification",
+   "harm_family": null,
+   "type": "RiskMechanism"
+  },
+  "edge": {
+   "condition": "General",
+   "relation_type": "PROMOTES"
+  },
+  "tail": {
+   "entity": "loss of control over personal location information",
+   "harm_family": "PrivacyViolation",
+   "type": "EthicalImpact"
+  },
+  "source_doc": "Privacy_GeoAI.pdf",
+  "chain_id": "Privacy_GeoAI.pdf::chain006"
+ },
+ {
+  "head": {
+   "entity": "geoai foundation models",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "During pre-training and fine-tuning stages with geospatial data"
+  },
+  "tail": {
+   "entity": "disclosure of sensitive geospatial information",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ai_human_geography.pdf",
+  "chain_id": "ai_human_geography.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "disclosure of sensitive geospatial information",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When exposing home locations, workspaces, and daily trajectories"
+  },
+  "tail": {
+   "entity": "geospatial privacy violation",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "ai_human_geography.pdf",
+  "chain_id": "ai_human_geography.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "user privacy protection methods geomasking k-anonymization differential privacy",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "In human mobility studies seeking to balance data utility and privacy"
+  },
+  "tail": {
+   "entity": "disclosure of sensitive geospatial information",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ai_human_geography.pdf",
+  "chain_id": "ai_human_geography.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "deep learning models for population mapping",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Under conditions of spatial heterogeneity and varying neighborhood sizes"
+  },
+  "tail": {
+   "entity": "systematic bias in population distribution estimation",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ai_human_geography.pdf",
+  "chain_id": "ai_human_geography.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "systematic bias in population distribution estimation",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When models are used to facilitate resource allocation and disaster preparedness"
+  },
+  "tail": {
+   "entity": "inequitable resource allocation and service access",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "ai_human_geography.pdf",
+  "chain_id": "ai_human_geography.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "human-centered design and human-in-the-loop processes",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "During the design of GeoAI systems and algorithms"
+  },
+  "tail": {
+   "entity": "representational bias and lack of inclusivity",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "ai_human_geography.pdf",
+  "chain_id": "ai_human_geography.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "representational bias and lack of inclusivity",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When pre-trained models fail to account for local cultural and socioeconomic diversity"
+  },
+  "tail": {
+   "entity": "social discrimination and exclusion across geographic regions",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "ai_human_geography.pdf",
+  "chain_id": "ai_human_geography.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "geo-referencing",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "privacy violations",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "outdated or irrelevant training data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "system failures and inaccurate results",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "system failures and inaccurate results",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When occurring in critical business areas such as finance, healthcare, or security."
+  },
+  "tail": {
+   "entity": "serious economic consequences",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "opaque ai systems",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "identification and correction of errors or biases",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "geographic location information in datasets",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "If geodata is not handled appropriately."
+  },
+  "tail": {
+   "entity": "privacy violations",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "limitations of traditional supervision methods",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When dealing with complex datasets and evolving environments."
+  },
+  "tail": {
+   "entity": "physical harm",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "infographic framework for geoai ethics",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "To support the structured development of ethical GeoAI."
+  },
+  "tail": {
+   "entity": "physical harm",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "incorporating ai ethics education into gis",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "social inequity from overlooked communities",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "An infographic framework of GeoAI ethics based on news data.pdf",
+  "chain_id": "An infographic framework of GeoAI ethics based on news data.pdf::chain006"
+ },
+ {
+  "head": {
+   "entity": "treating heterogeneous spatial data as uniform",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When distinct regions are aggregated without accounting for subpopulation variance"
+  },
+  "tail": {
+   "entity": "masking of subpopulation conditions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "masking of subpopulation conditions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "formulation of flawed public policy failing marginalized communities",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "dimensionality reduction visualization",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Used during the data audit stage to reveal clusters"
+  },
+  "tail": {
+   "entity": "masking of subpopulation conditions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "inappropriate bandwidth parameter setting in kernel density estimation",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When bandwidth is excessively large for the local spatial context"
+  },
+  "tail": {
+   "entity": "false center phenomenon",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "false center phenomenon",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "misallocation of public resources",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "dynamic parameter visualization",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Allows analysts to observe sensitivity in real time"
+  },
+  "tail": {
+   "entity": "false center phenomenon",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "subjective spatial and non-spatial data grouping",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "subjective narrative reinforcement",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "subjective narrative reinforcement",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "statistical gerrymandering and social stereotype reinforcement",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "multi-grouping visualization",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "By comparing outcomes across different grouping schemes"
+  },
+  "tail": {
+   "entity": "subjective narrative reinforcement",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2026_ethical_spatial_analysis.pdf",
+  "chain_id": "chen2026_ethical_spatial_analysis.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "data acquisition and preprocessing",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "unknown",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "unknown",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "privacy violations",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "model building",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "unknown",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "unknown",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "physical harm",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "outdated training data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "untimely maintenance of training data",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "untimely maintenance of training data",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "psychological harm",
+   "type": "EthicalImpact",
+   "harm_family": "PsychologicalHarm"
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "ai-powered search algorithm",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Search engine results"
+  },
+  "tail": {
+   "entity": "imbalanced training data",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "imbalanced training data",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "equal rights violation",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "user experience and interaction",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "unknown",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "unknown",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "economic loss",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "privacy violations",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "economic loss",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "equal rights violation",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "psychological harm",
+   "type": "EthicalImpact",
+   "harm_family": "PsychologicalHarm"
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain006"
+ },
+ {
+  "head": {
+   "entity": "manual oversight process",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "Artificial oversight implementation"
+  },
+  "tail": {
+   "entity": "limitations of traditional oversight methods",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "chen2025_decoding_ai_risks_news.pdf",
+  "chain_id": "chen2025_decoding_ai_risks_news.pdf::chain007"
+ },
+ {
+  "head": {
+   "entity": "training data from us home insurance applications",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "without external ethical intervention"
+  },
+  "tail": {
+   "entity": "redlining in mortgage lending",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "trust_foundation_models_geo.pdf",
+  "chain_id": "trust_foundation_models_geo.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "geographic data scarcity in rural and remote areas",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "when models perform well only in data-rich urban areas"
+  },
+  "tail": {
+   "entity": "socio-spatial service disparities",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "trust_foundation_models_geo.pdf",
+  "chain_id": "trust_foundation_models_geo.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "public sharing of personal vehicle trajectory data",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "privacy violation of riders",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "trust_foundation_models_geo.pdf",
+  "chain_id": "trust_foundation_models_geo.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "aav target identification and decision algorithms",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "without human supervision"
+  },
+  "tail": {
+   "entity": "lethal outcomes for combatants and non-combatants",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "trust_foundation_models_geo.pdf",
+  "chain_id": "trust_foundation_models_geo.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "explainable ai xai",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "when processes are made interpretable"
+  },
+  "tail": {
+   "entity": "inability to audit black-box model decisions",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "trust_foundation_models_geo.pdf",
+  "chain_id": "trust_foundation_models_geo.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "bias in input data for predictive policing",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "flawed and biased law enforcement outcomes",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "trust_foundation_models_geo.pdf",
+  "chain_id": "trust_foundation_models_geo.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "ubiquitous positioning hardware in mobile devices",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "systematic and secret recording of individual movement",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "systematic and secret recording of individual movement",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "loss of individual geoprivacy",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "location-based inference algorithms",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "reconstruction of sensitive personal profiles",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "reconstruction of sensitive personal profiles",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Without explicit user consent"
+  },
+  "tail": {
+   "entity": "unintended disclosure of sensitive personal characteristics",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "usage-based financial incentives for location sharing",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Insurance and service markets"
+  },
+  "tail": {
+   "entity": "financial burden for privacy maintenance",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "cell-tower based location monitoring",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Political protests and social activism"
+  },
+  "tail": {
+   "entity": "state-led surveillance of civil activity",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "state-led surveillance of civil activity",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Authoritarian contexts"
+  },
+  "tail": {
+   "entity": "violation of political liberties and freedom of speech",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "improved public education on position tracking",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "General"
+  },
+  "tail": {
+   "entity": "unintentional location data exposure through ignorance",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "kessler2018_geoprivacy_manifesto.pdf",
+  "chain_id": "kessler2018_geoprivacy_manifesto.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "geoai analysis of big data streams",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When data is collected unconsciously from social media and location-based services"
+  },
+  "tail": {
+   "entity": "disclosure of intimate individual behaviors",
+   "type": "EthicalImpact",
+   "harm_family": "PrivacyViolation"
+  },
+  "source_doc": "AI_in_Cartography.pdf",
+  "chain_id": "AI_in_Cartography.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "spatially biased crowdsourced datasets",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When data is sparse in rural areas or privileges dominant demographics"
+  },
+  "tail": {
+   "entity": "inequitable map products that privilege powerful groups",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "AI_in_Cartography.pdf",
+  "chain_id": "AI_in_Cartography.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "predictive policing algorithms",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When authoritative data targets marginalized groups for historical reasons"
+  },
+  "tail": {
+   "entity": "racial and geographic profiling",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "AI_in_Cartography.pdf",
+  "chain_id": "AI_in_Cartography.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "proprietary geoai models and products",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When models are controlled by developed countries and charged for use"
+  },
+  "tail": {
+   "entity": "digital colonialism and widening economic gaps",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "AI_in_Cartography.pdf",
+  "chain_id": "AI_in_Cartography.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "generative adversarial networks gans",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "When models create unrealistic artifacts in map designs"
+  },
+  "tail": {
+   "entity": "deep fake geography and misinformation",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "AI_in_Cartography.pdf",
+  "chain_id": "AI_in_Cartography.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "human-in-the-loop geoai",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "By allowing cartographers to intervene in output quality and visual assessment"
+  },
+  "tail": {
+   "entity": "unethical or inaccurate machine-generated maps",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "AI_in_Cartography.pdf",
+  "chain_id": "AI_in_Cartography.pdf::chain005"
+ },
+ {
+  "head": {
+   "entity": "autonomous driving technology",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Substandard technology implementation in vehicles"
+  },
+  "tail": {
+   "entity": "sensor failure to correctly identify targets",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "sensor failure to correctly identify targets",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Real-world autonomous vehicle deployment"
+  },
+  "tail": {
+   "entity": "physical injury or death in traffic accidents",
+   "type": "EthicalImpact",
+   "harm_family": "PhysicalHarm"
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "predictive policing algorithms",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Law enforcement scenarios"
+  },
+  "tail": {
+   "entity": "algorithmic bias leaning toward identifying specific races as criminals",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "algorithmic bias leaning toward identifying specific races as criminals",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Application of AI in policing"
+  },
+  "tail": {
+   "entity": "racial discrimination in law enforcement",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "travel booking recommendation algorithms",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Online travel booking platforms like Ctrip"
+  },
+  "tail": {
+   "entity": "differentiated pricing based on user portraits",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "differentiated pricing based on user portraits",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "General use by 'familiar' or returning users"
+  },
+  "tail": {
+   "entity": "economic loss due to price discrimination",
+   "type": "EthicalImpact",
+   "harm_family": "EconomicLoss"
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain002"
+ },
+ {
+  "head": {
+   "entity": "facial recognition systems",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Identity authentication at borders or on devices"
+  },
+  "tail": {
+   "entity": "performance bias toward majority demographic groups",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "performance bias toward majority demographic groups",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "Minority group interaction with automated authentication"
+  },
+  "tail": {
+   "entity": "exclusion and discrimination based on race",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain003"
+ },
+ {
+  "head": {
+   "entity": "operable ai ethics guidelines",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "When guidelines address specific real-world consequences"
+  },
+  "tail": {
+   "entity": "lack of algorithmic transparency and explainability",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf",
+  "chain_id": "AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf::chain004"
+ },
+ {
+  "head": {
+   "entity": "dalle 2 generative map synthesis",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "when models generate pseudo-words or non-existent provinces"
+  },
+  "tail": {
+   "entity": "generation of misleading geospatial information and pseudo-words",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "LIPIcs.GIScience.2023.93.pdf",
+  "chain_id": "LIPIcs.GIScience.2023.93.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "generation of misleading geospatial information and pseudo-words",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "particularly in sensitive political or cultural contexts"
+  },
+  "tail": {
+   "entity": "spread of geospatial misinformation and distortion of reality",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "LIPIcs.GIScience.2023.93.pdf",
+  "chain_id": "LIPIcs.GIScience.2023.93.pdf::chain000"
+ },
+ {
+  "head": {
+   "entity": "ai reflection of specific geopolitical identities",
+   "type": "TechnicalFeature",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "when keyword prompts trigger unprompted thematic biases"
+  },
+  "tail": {
+   "entity": "stoking of nationalism and xenophobic discourse",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "source_doc": "LIPIcs.GIScience.2023.93.pdf",
+  "chain_id": "LIPIcs.GIScience.2023.93.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "stoking of nationalism and xenophobic discourse",
+   "type": "RiskMechanism",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "PROMOTES",
+   "condition": "within biased geopolitical discourse"
+  },
+  "tail": {
+   "entity": "reinforcement of xenophobic or biased geopolitical discourse",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "LIPIcs.GIScience.2023.93.pdf",
+  "chain_id": "LIPIcs.GIScience.2023.93.pdf::chain001"
+ },
+ {
+  "head": {
+   "entity": "resnet-18 based ai-generated map detector",
+   "type": "Mitigation",
+   "harm_family": null
+  },
+  "edge": {
+   "relation_type": "INHIBITS",
+   "condition": "when applied to identify potential misinformation on social media"
+  },
+  "tail": {
+   "entity": "spread of geospatial misinformation and distortion of reality",
+   "type": "EthicalImpact",
+   "harm_family": "EqualRightsViolation"
+  },
+  "source_doc": "LIPIcs.GIScience.2023.93.pdf",
+  "chain_id": "LIPIcs.GIScience.2023.93.pdf::chain002"
+ }
+]

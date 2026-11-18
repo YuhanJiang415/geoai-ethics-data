@@ -1,0 +1,794 @@
+[
+  {
+    "child": "denial of resources or delayed emergency aid to marginalized populations",
+    "parent": "harm to marginalized communities",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "flawed public policy failing marginalized communities",
+    "parent": "harm to marginalized communities",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "inappropriate policy decisions impacting communities",
+    "parent": "harm to marginalized communities",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "privacy-by-design methodologies",
+    "parent": "privacy by design",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "privacy by design data minimization",
+    "parent": "privacy by design",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geoai analysis of big data streams",
+    "parent": "geoai modeling",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geoai for flood vulnerability mapping and disaster management",
+    "parent": "geoai modeling",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geoai models utilizing location data",
+    "parent": "geoai modeling",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "high-complexity geoai models",
+    "parent": "geoai modeling",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "training of foundational and large-scale geoai models",
+    "parent": "geoai modeling",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "racially biased criminal identification",
+    "parent": "false criminal identification",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "incorrect identification of individuals as criminals",
+    "parent": "false criminal identification",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geo-referencing",
+    "parent": "geospatial data feature",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geographic location information in datasets",
+    "parent": "geospatial data feature",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "environmental injustice and social burden on local residents",
+    "parent": "spatial injustice",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "systemic spatial injustice and inequity",
+    "parent": "spatial injustice",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violations of spatial justice and accountability",
+    "parent": "spatial injustice",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "equal rights violation",
+    "parent": "rights violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of due process and equal rights",
+    "parent": "rights violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of individual liberty and autonomy",
+    "parent": "rights violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of political liberties and freedom of speech",
+    "parent": "rights violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of rights of the observed",
+    "parent": "rights violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "exclusion of marginalized voices from spatial representation",
+    "parent": "representational bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "representational bias and lack of inclusivity",
+    "parent": "representational bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "dimensionality reduction visualization",
+    "parent": "data visualization",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "multi-grouping visualization",
+    "parent": "data visualization",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "discriminatory allocation of resources",
+    "parent": "algorithmic discrimination",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "reinforcing or perpetuating discriminatory applications",
+    "parent": "algorithmic discrimination",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "sampling bias toward dominant cultures",
+    "parent": "demographic bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "performance bias toward majority demographic groups",
+    "parent": "demographic bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "amplification of societal inequities through discriminatory policing",
+    "parent": "discriminatory policing harm",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "biased law enforcement outcomes",
+    "parent": "discriminatory policing harm",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "racial discrimination in law enforcement",
+    "parent": "racial discrimination in policing",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "racial discrimination in predictive policing",
+    "parent": "racial discrimination in policing",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "bias in predictive policing input data",
+    "parent": "predictive policing",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "predictive ai crime modeling",
+    "parent": "predictive policing",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "predictive policing algorithms",
+    "parent": "predictive policing",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "predictive policing using spatio-temporal analysis",
+    "parent": "predictive policing",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "cell-tower based location monitoring",
+    "parent": "mobile location tracking",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "mapping of mobile phone location data",
+    "parent": "mobile location tracking",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "smartphone location tracking",
+    "parent": "mobile location tracking",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "data governance and bias audits article 10 eu ai act",
+    "parent": "eu ai act",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "human oversight article 14 eu ai act",
+    "parent": "eu ai act",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "biased machine learning datasets",
+    "parent": "biased datasets",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "biased training datasets from social data or crowdsourcing",
+    "parent": "biased datasets",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "spatially biased crowdsourced datasets",
+    "parent": "biased datasets",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "privacy breaches of at-risk populations",
+    "parent": "privacy violations",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "algorithmic marginalization and community exclusion",
+    "parent": "marginalization and exclusion",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "exclusion of marginalized groups from knowledge production",
+    "parent": "marginalization and exclusion",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "safety risks in safety-critical earth observation missions",
+    "parent": "safety and robustness risks",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "threats to safety and robustness in high-risk missions",
+    "parent": "safety and robustness risks",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "re-identification of individuals from geospatial data",
+    "parent": "re-identification risk",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "risk of user re-identification",
+    "parent": "re-identification risk",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "exposure of sensitive group data facilitating re-identification",
+    "parent": "re-identification risk",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "re-identification from anonymous data",
+    "parent": "re-identification risk",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "disclosure of intimate individual behaviors",
+    "parent": "sensitive information disclosure",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "revelation of sensitive personal information",
+    "parent": "sensitive information disclosure",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "economic loss from price discrimination",
+    "parent": "economic loss",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "economic loss from increased insurance costs",
+    "parent": "economic loss",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "physical harm",
+    "parent": "harm to individuals",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "psychological harm",
+    "parent": "harm to individuals",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "black-box nature of ai models",
+    "parent": "model opacity",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "black-box nature of deep neural networks",
+    "parent": "model opacity",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "data scarcity in rural and remote areas",
+    "parent": "unrepresentative geographic training data",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "automation bias",
+    "parent": "cognitive bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "gender bias",
+    "parent": "demographic bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geomasking and spatial-temporal cloaking",
+    "parent": "privacy protection methods",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "user privacy protection methods geomasking k-anonymization differential privacy",
+    "parent": "privacy protection methods",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "targeting of vulnerable communities for harm",
+    "parent": "harm to vulnerable groups",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "threats to the physical safety of vulnerable groups",
+    "parent": "harm to vulnerable groups",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "psychological harm from stigmatization",
+    "parent": "stigmatization harm",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "social stigmatisation of community members",
+    "parent": "stigmatization harm",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "discrimination against vulnerable communities",
+    "parent": "discrimination",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "discrimination and unfair treatment of social groups",
+    "parent": "discrimination",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "racial discrimination",
+    "parent": "discrimination",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "gender discrimination",
+    "parent": "discrimination",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "racial and income-based discrimination",
+    "parent": "discrimination",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geoai foundation models",
+    "parent": "geoai models",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "proprietary geoai models and products",
+    "parent": "geoai models",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geographic discrimination and social inequality",
+    "parent": "discrimination",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "racial and geographic profiling",
+    "parent": "discrimination",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "inability to understand underlying geographic processes",
+    "parent": "geographic interpretability deficit",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "overlooking of social and geographical significance",
+    "parent": "geographic interpretability deficit",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "algorithmic bias against low-population areas",
+    "parent": "geographic representation bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geographic representational imbalance",
+    "parent": "geographic representation bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "inaccurate classification and representation of urban areas",
+    "parent": "geographic representation bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "representation bias in spatial data coverage",
+    "parent": "geographic representation bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "ai and geographic information technologies",
+    "parent": "geospatial ai technology",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "ai-assisted mapping and monitoring",
+    "parent": "geospatial ai technology",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "generative ai and ai-generated maps",
+    "parent": "geospatial ai technology",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "location privacy violation",
+    "parent": "privacy violations",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "geospatial privacy violation",
+    "parent": "privacy violations",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "interdependent privacy violation",
+    "parent": "privacy violations",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "loss of control over personal location information",
+    "parent": "location privacy violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "potential privacy risks",
+    "parent": "privacy violations",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "privacy violation of riders",
+    "parent": "privacy violations",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of group informational privacy",
+    "parent": "privacy violations",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of individual and group privacy",
+    "parent": "privacy violations",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of individual locational privacy",
+    "parent": "location privacy violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "violation of location behavior and association privacy",
+    "parent": "location privacy violation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "large-scale greenhouse gas emissions",
+    "parent": "environmental harm",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "high carbon dioxide emissions and resource depletion",
+    "parent": "environmental harm",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "stigmatization of communities",
+    "parent": "stigmatization",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "territorial stigmatization",
+    "parent": "stigmatization",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "incorporating ai ethics education into gis",
+    "parent": "geoai ethics promotion",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "infographic framework for geoai ethics",
+    "parent": "geoai ethics promotion",
+    "type": "Mitigation",
+    "relation": "IS_A"
+  },
+  {
+    "child": "automated detection of building footprints in informal settlements",
+    "parent": "informal settlement mapping",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "classification of informal settlements and slums",
+    "parent": "informal settlement mapping",
+    "type": "TechnicalFeature",
+    "relation": "IS_A"
+  },
+  {
+    "child": "discriminatory resource allocation in humanitarian aid",
+    "parent": "inequitable resource allocation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "inequitable resource allocation and misclassification of vulnerable regions",
+    "parent": "inequitable resource allocation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "inequitable resource allocation and service access",
+    "parent": "inequitable resource allocation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "misallocation of public resources",
+    "parent": "inequitable resource allocation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "socio-spatial service disparities",
+    "parent": "inequitable resource allocation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "unfair distribution of urban resources and services",
+    "parent": "inequitable resource allocation",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "algorithmic focus bias",
+    "parent": "algorithmic bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "obfuscation of underlying algorithmic bias",
+    "parent": "algorithmic bias",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "disclosure of sensitive geospatial information",
+    "parent": "geospatial data exposure",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "unauthorized sharing or migration of sensitive geospatial data",
+    "parent": "geospatial data exposure",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "privacy exposure of location data",
+    "parent": "location data exposure",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "unintentional location data exposure through ignorance",
+    "parent": "location data exposure",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "amplification of social disparities",
+    "parent": "social inequity",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "inequitable map products privileging powerful groups",
+    "parent": "social inequity",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "social inequity from overlooked communities",
+    "parent": "social inequity",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "invasive collection and monitoring of personal information",
+    "parent": "surveillance",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "state-led surveillance of civil activity",
+    "parent": "surveillance",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "surreptitious surveillance",
+    "parent": "surveillance",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "surveillance and tracking misuse",
+    "parent": "surveillance",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "surveillance by malevolent groups or oppressive governments",
+    "parent": "surveillance",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "exclusion or misrepresentation of vulnerable populations in datasets",
+    "parent": "harm to vulnerable populations",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "identification of vulnerable populations for law enforcement targeting",
+    "parent": "harm to vulnerable populations",
+    "type": "RiskMechanism",
+    "relation": "IS_A"
+  },
+  {
+    "child": "reduced reliability and fairness of geoai systems in underserved regions",
+    "parent": "geoai algorithmic fairness harm",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  },
+  {
+    "child": "undetected discriminatory outcomes in geoai applications",
+    "parent": "geoai algorithmic fairness harm",
+    "type": "EthicalImpact",
+    "relation": "IS_A"
+  }
+]

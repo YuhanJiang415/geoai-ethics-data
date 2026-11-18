@@ -1,0 +1,10 @@
+set,file,judge,total_triples,scored_triples,ground,causal,verdict
+ratings,ratings_claude-opus-4-8_nokg_2026-07-12,LLM:claude-opus-4-8,794,767,0.9883,0.9961,0.9348
+ratings,ratings_claude-opus-4-8_run2_2026-07-12,LLM:claude-opus-4-8,618,560,0.9821,0.9982,0.9232
+ratings_100,ratings_DeepSeek-V3.2_2026-06-30,LLM:DeepSeek-V3.2,372,308,0.5812,0.8506,0.5487
+ratings_100,ratings_DeepSeek-V3.2_claude_2026-07-01,LLM:DeepSeek-V3.2,628,501,0.8204,0.9182,0.7066
+ratings_100,ratings_claude-opus-4-8_2026-06-30,LLM:claude-opus-4-8,372,370,0.8649,0.9514,0.8622
+ratings_100,ratings_gemini-2.5-pro_2026-07-01,LLM:gemini-2.5-pro,628,628,0.9013,0.9904,0.8487
+ratings_100,ratings_gpt-5.4_2026-06-30,LLM:gpt-5.4,372,372,0.414,0.9489,0.7688
+ratings_100,ratings_gpt-5.4_claude_2026-07-01,LLM:gpt-5.4,628,628,0.4618,0.8774,0.801
+ratings_500,ratings_claude-opus-4-8_2026-07-03,LLM:claude-opus-4-8,3094,2837,0.9729,0.9785,0.902

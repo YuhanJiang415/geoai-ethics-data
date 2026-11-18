@@ -1,0 +1,6 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+none,9023,9017,8482,32599,1604,3708,4499,2502,1796,274
+single_country,3787,3787,3652,18622,1254,2030,1732,1906,710,119
+multi_country,2320,2320,2265,12638,1014,1360,933,1435,357,59
+continental,280,280,252,879,68,62,150,100,10,2
+global,82,82,79,352,22,38,41,37,12,2

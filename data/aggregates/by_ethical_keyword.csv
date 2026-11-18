@@ -1,0 +1,3 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+no,12990,12984,12302,52392,2862,5853,6277,4725,2401,382
+yes,2502,2502,2428,12698,1100,1345,1078,1255,484,74

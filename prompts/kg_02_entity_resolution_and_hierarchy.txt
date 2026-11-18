@@ -1,0 +1,18 @@
+You are normalizing entities in a GeoAI-ethics knowledge graph.
+Below are several surface forms that are ALL of node type "{ntype}" and are lexically/semantically similar.
+
+Decide which surface forms denote the SAME underlying concept (differing only in WORDING) and should be MERGED, versus which denote GENUINELY DIFFERENT concepts (different affected party, scope, geography, or causal mechanism) that must stay SEPARATE.
+
+MERGE only for pure wording differences: synonyms, paraphrase, singular/plural, abbreviation, word order, or vague-vs-verbose phrasing of the SAME idea.
+  example: "geospatial privacy violation" == "location-based privacy violation"  -> MERGE
+DO NOT MERGE when a qualifier changes WHO/WHAT is affected or the mechanism.
+  example: "individual privacy", "group privacy", "location privacy"  -> KEEP SEPARATE (different referents)
+
+For concepts you keep separate that nonetheless share a more general umbrella, give that umbrella as "parent" (a short 2-5 word canonical label, e.g. "privacy violation"). Merged concepts also get a "canonical" label: the clearest, shortest, most general wording (you may reuse a member or lightly clean it).
+
+Return ONLY JSON, no prose:
+{{"groups": [{{"canonical": "<label>", "members": ["<exact surface form>", ...], "parent": "<umbrella or empty>"}}]}}
+Every input surface form must appear in EXACTLY ONE group's "members". A merged group has >1 member; a kept-separate concept is its own group with exactly 1 member. "parent" may repeat across sibling groups; use "" when there is no sensible umbrella.
+
+Surface forms (type = {ntype}):
+{items}

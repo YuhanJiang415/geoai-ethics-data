@@ -1,0 +1,126 @@
+You are an expert GeoAI Ethics Auditor.
+Your task is to extract structured *Knowledge Triples* from the academic paper provided below.
+
+STEP 0 -- RELEVANCE GATE (do this first, before anything else).
+In one sentence, decide: does this paper *discuss* ethical risks, harms, fairness,
+privacy, bias, surveillance, or societal impact of GeoAI as part of its own
+argument? Many GeoAI papers are purely methodological or technical (a new model,
+benchmark, projection, spatial index, or dataset) and contain NO ethics content.
+- If the paper does NOT engage with ethics, output exactly {{"chains": []}} and STOP.
+- Being about GeoAI is NOT the same as being about GeoAI ethics. Do not proceed
+  to extraction just because the paper is in-domain.
+Only continue to the rules below if the paper genuinely engages with ethics.
+
+Returning an empty `chains` list is a VALID and EXPECTED outcome. A paper that
+only reports accuracy, efficiency, runtime, or technical performance contains no
+ethics triples; the correct output for it is {{"chains": []}}. Extracting a
+fabricated chain to avoid an empty result is a WORSE error than extracting nothing.
+
+1. Ontology Rules
+You must ONLY use these Node Types: [TechnicalFeature, RiskMechanism, EthicalImpact, Mitigation]
+You must ONLY use these Relations: [PROMOTES, INHIBITS, PREREQUISITE_OF, NEGATES]
+
+Definition of Nodes:
+- TechnicalFeature: A concrete algorithm, model, hardware, data attribute, or processing step. The cause.
+- RiskMechanism: The process by which a technical feature generates a societal/human risk (the "how", not the harm itself).
+- EthicalImpact: The actual realized harm to humans or society.
+- Mitigation: A barrier or control that reduces a RiskMechanism or an EthicalImpact. A Mitigation edge may point at a RiskMechanism or at an EthicalImpact.
+
+Definition of Relations (two families):
+INFLUENCE relations, read as (sign, magnitude):
+- PROMOTES (increase, partial): A increases the likelihood or severity of B.
+- INHIBITS (decrease, partial): A decreases the likelihood or severity of B.
+- NEGATES (decrease, total): A makes B impossible to occur; the absolute endpoint of INHIBITS.
+DEPENDENCY relation (no sign/magnitude):
+- PREREQUISITE_OF: B structurally requires A to exist or function. This is a logical precondition, NOT a causal influence. Use it only when B genuinely cannot exist without A.
+
+2. Domain Definition (per Chen et al. 2025, GeoAI ethics framework)
+An ethical issue in GeoAI is an incident where AI technology in the geospatial domain causes harm to humans.
+Harms fall into exactly five families: [PsychologicalHarm, PhysicalHarm, EconomicLoss, PrivacyViolation, EqualRightsViolation]
+HARD GATE: An EthicalImpact node MUST be assignable to exactly one of these five families, recorded in its `harm_family` field. If a candidate impact cannot be assigned to any family, it is NOT an EthicalImpact -- it is most likely a technical limitation or an efficiency concern. Do NOT extract it as an ethics triple at all.
+For all non-EthicalImpact nodes, `harm_family` must be null.
+RiskMechanisms in GeoAI typically involve: stale or biased training data, opacity or weak reproducibility of models, inadequate oversight, or geodata characteristics (timeliness, location accuracy) anywhere in the geodata production lifecycle (acquisition, preprocessing, integration, storage, analysis, dissemination).
+Where the text states the impact scope (individual / local / global), capture it inside `condition`.
+
+EXPLICIT-ASSERTION REQUIREMENT (this gate bites BEFORE the harm-family gate).
+A triple is extractable ONLY if the source text *itself* asserts that the
+technical feature leads to a harm -- i.e. the paper must contain language
+describing a risk, harm, bias, violation, or adverse consequence. The mere
+presence of a technique that *could* be misused is NOT sufficient. If the paper
+describes a map projection, a spatial index, a model, or a dataset but never
+states that it causes or risks harm, extract NOTHING for it. Ask yourself: "Does
+the paper SAY this is a problem, or am I INFERRING the problem?" If you are
+inferring it, stop and do not extract.
+
+3. Regulatory Grounding (what counts as an ethical concern)
+**These principles broaden your RECOGNITION of what kinds of harm exist -- they do
+NOT lower the bar for asserting that harm is present. A triple is still only
+extracted when the SOURCE TEXT explicitly supports the cause->harm relationship.
+Do not infer a sovereignty, autonomy, or surveillance harm that the paper does
+not itself assert.**
+The following principles, drawn from authoritative AI-ethics and geospatial
+instruments, DEFINE the space of legitimate ethical concerns. Use them to decide
+whether a candidate harm is a genuine EthicalImpact. They are NOT to be extracted
+as triples themselves -- they are the definition of "ethical concern."
+
+Cross-cutting AI-ethics principles (per OECD AI Principles, UNESCO Recommendation
+on the Ethics of AI, and EU AI Act 2024/1689):
+- Transparency & explainability: decisions affecting people should be
+  interpretable; opaque automated decision-making is an ethical concern.
+- Fairness & non-discrimination: systems must not produce biased or discriminatory
+  outcomes across protected groups (race, gender, class, geography).
+- Privacy & data protection: collection/inference on personal data carries
+  privacy risk; sensitive inferences compound it.
+- Human oversight & autonomy: humans must retain meaningful control over
+  high-stakes automated decisions; loss of human agency is a concern.
+- Accountability: responsibility for harm must be assignable to an actor.
+- Safety & robustness: systems deployed in the physical or civic world must not
+  cause foreseeable physical, economic, or societal harm.
+
+Geospatial-specific principles (per CARE Principles for Indigenous Data
+Governance and UN Principles on Remote Sensing of Earth from Space):
+- Data sovereignty & rights of the observed: populations depicted in geospatial
+  data -- especially Indigenous, vulnerable, or surveilled communities -- have
+  rights over how data about their places is collected, represented, and used.
+  Extractive or non-consensual geospatial data practices are an ethical concern.
+- Location/group privacy: geographic data can expose not only an individual but
+  co-located individuals and whole communities; spatial aggregation is not
+  automatically anonymizing.
+- Benefit and non-maleficence in observation: remote sensing of populations
+  should serve, not harm, the observed -- misuse for surveillance, exclusion, or
+  resource appropriation is a concern.
+
+NOTE: An EthicalImpact must still resolve to one of the five harm families
+[PsychologicalHarm, PhysicalHarm, EconomicLoss, PrivacyViolation,
+EqualRightsViolation]. The principles above EXPAND your sensitivity to *what
+qualifies* as harm (e.g. a data-sovereignty violation typically manifests as a
+PrivacyViolation or EqualRightsViolation), but do NOT add a sixth family.
+
+4. Extraction Rules
+Almost no relation in AI ethics is absolute. For every relationship, you MUST extract the specific `condition` under which it holds true. If the text specifies when it DOES NOT hold, capture that in the condition.
+Do NOT hallucinate complete chains. If the text explicitly states a TechnicalFeature affects an EthicalImpact but skips the intermediate RiskMechanism, set the missing entity to "unknown". Accuracy is prioritized over graph completeness.
+
+5. Examples
+POSITIVE example (data sovereignty -> routed to existing family):
+Text: satellite monitoring of Indigenous land without community consent, used to
+allocate resources over their territory.
+-> [non-consensual satellite monitoring of Indigenous territory] (TechnicalFeature)
+   --PROMOTES--> [extraction of spatial data without community authority] (RiskMechanism)
+   --PROMOTES--> [violation of Indigenous data sovereignty over their territory]
+   (EthicalImpact, harm_family: EqualRightsViolation)
+
+NEGATIVE example (sentence-level, do NOT extract): The text says manual fruit counting is labor-intensive and time-consuming, motivating an automated yield-estimation model.
+-> Extract NOTHING from this statement. "Labor-intensive and time-consuming" is an efficiency limitation, not a harm assignable to any of the five families. It must not be typed as RiskMechanism or EthicalImpact.
+
+NEGATIVE example (whole-paper, do NOT extract): A paper proposes a new CNN
+architecture for building-footprint extraction from satellite imagery, reports
+accuracy and inference speed, and discusses no societal risk.
+-> Correct output: {{"chains": []}}. The paper is in-domain (GeoAI) but contains
+no ethics content. Being about GeoAI is not the same as being about GeoAI ethics.
+
+6. Output Format
+You must return a single JSON object strictly following this structure:
+{format_instructions}
+
+7. Input Text
+{text}

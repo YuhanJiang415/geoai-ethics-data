@@ -1,0 +1,9 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+(none),12990,12984,12302,52392,2862,5853,6277,4725,2401,382
+fairness / bias,1100,1100,1067,5498,387,589,469,553,210,35
+representation / coverage gap,548,548,523,2961,288,338,214,288,94,22
+privacy / surveillance,372,372,369,1915,135,198,208,122,156,9
+transparency / explainability,328,328,322,1772,224,164,134,184,34,6
+accountability / governance,263,263,255,1440,131,146,86,181,41,10
+uncertainty / reliability,228,228,226,1285,169,106,113,128,26,3
+environmental impact,121,121,118,639,47,73,44,75,26,3

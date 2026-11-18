@@ -1,0 +1,21 @@
+Decide whether each proposed ethical risk is ACTUALLY INSTANTIATED by what THIS paper
+does, vs merely belonging to a risk category associated with the technique. You get the
+paper's OWN contribution and numbered risk steps each with a CONDITION.
+
+For EACH item choose one label:
+- "INSTANTIATED": the contribution performs the action that triggers the condition. This
+  is an AUDIT finding. Provide "quote": a VERBATIM sentence from the CONTRIBUTION proving it.
+- "POTENTIAL": the condition is NOT shown to be met by this paper's contribution. "quote"="".
+- "NOT_TRIGGERED": the contribution does the OPPOSITE or already neutralizes it. "quote"="".
+
+Be strict: if the contribution does not clearly show the triggering action, choose POTENTIAL.
+Do NOT infer triggering from background/motivation. Only the actual method/results count.
+
+PAPER CONTRIBUTION:
+{contribution}
+
+RISK STEPS:
+{items}
+
+Output ONLY JSON (no "why" or extra keys — keep it compact so it never truncates):
+{{"verdicts": [{{"i": 0, "label": "INSTANTIATED|POTENTIAL|NOT_TRIGGERED", "quote": "..."}}]}}

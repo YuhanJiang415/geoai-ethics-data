@@ -1,0 +1,113 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+2026|fairness / bias,196,196,196,1133,90,118,96,99,56,4
+2024|fairness / bias,171,171,169,886,58,99,80,81,37,5
+2025|fairness / bias,167,167,162,824,68,94,58,80,30,8
+2026|representation / coverage gap,137,137,131,733,66,76,60,72,32,4
+2023|fairness / bias,128,128,123,581,33,67,59,50,21,4
+2025|representation / coverage gap,127,127,123,701,75,82,44,70,16,5
+2022|fairness / bias,124,124,122,645,34,65,68,55,27,6
+2024|representation / coverage gap,90,90,83,509,54,59,34,43,10,6
+2026|privacy / surveillance,88,88,87,437,38,41,50,31,42,4
+2025|transparency / explainability,85,85,83,413,56,40,34,48,12,0
+2025|privacy / surveillance,83,83,82,427,36,50,42,20,33,1
+2021|fairness / bias,80,80,77,420,30,43,37,46,15,1
+2020|fairness / bias,75,75,75,367,27,41,31,43,16,7
+2024|transparency / explainability,71,71,71,401,46,42,30,37,7,2
+2026|accountability / governance,66,66,64,360,33,39,25,40,14,3
+2026|uncertainty / reliability,63,63,63,365,47,33,35,35,7,0
+2026|transparency / explainability,61,61,60,374,49,33,24,37,6,1
+2024|privacy / surveillance,59,59,58,305,18,35,30,24,22,0
+2023|representation / coverage gap,57,57,55,303,27,39,22,27,13,2
+2024|accountability / governance,55,55,55,296,28,29,17,41,4,2
+2025|accountability / governance,55,55,53,313,29,35,16,38,12,1
+2025|uncertainty / reliability,53,53,51,296,38,22,26,30,7,1
+2022|representation / coverage gap,51,51,46,235,26,31,17,22,8,4
+2024|uncertainty / reliability,47,47,47,286,35,26,20,30,7,2
+2023|privacy / surveillance,45,45,45,217,13,21,30,12,18,0
+2022|privacy / surveillance,42,42,42,219,14,23,22,13,19,3
+2021|representation / coverage gap,40,40,40,221,17,24,15,29,10,0
+2023|transparency / explainability,36,36,35,196,27,14,14,21,4,1
+2023|uncertainty / reliability,32,32,32,155,24,13,17,13,3,0
+2025|environmental impact,31,31,29,160,8,19,14,19,8,0
+2018|fairness / bias,30,30,25,113,10,13,9,15,1,0
+2024|environmental impact,29,29,29,152,9,20,14,16,5,0
+2023|accountability / governance,27,27,26,141,14,14,8,18,2,2
+2021|privacy / surveillance,24,24,24,135,7,12,17,11,13,0
+2019|fairness / bias,21,21,20,108,6,11,9,13,1,0
+2020|representation / coverage gap,20,20,19,118,11,14,9,11,2,1
+2022|transparency / explainability,20,20,20,110,10,9,10,7,1,1
+2021|transparency / explainability,19,19,19,114,13,10,9,16,1,0
+2022|accountability / governance,19,19,19,120,11,9,9,11,4,2
+2022|uncertainty / reliability,18,18,18,106,12,7,9,10,2,0
+2026|environmental impact,18,18,18,106,11,12,5,9,6,1
+2015|fairness / bias,14,14,13,54,2,7,2,9,1,0
+2020|accountability / governance,14,14,13,68,7,7,4,10,1,0
+2020|privacy / surveillance,14,14,14,88,5,10,7,6,4,0
+2021|accountability / governance,14,14,14,82,4,8,4,13,4,0
+2012|fairness / bias,12,12,12,59,5,4,2,10,1,0
+2019|representation / coverage gap,12,12,12,64,6,7,4,6,1,0
+2017|fairness / bias,10,10,8,29,0,5,2,6,1,0
+2023|environmental impact,10,10,10,45,2,3,4,7,1,0
+2011|fairness / bias,9,9,9,42,2,3,3,6,0,0
+2016|fairness / bias,9,9,8,36,4,3,2,7,0,0
+2018|representation / coverage gap,9,9,9,47,3,5,5,5,2,0
+2019|transparency / explainability,9,9,8,40,6,6,4,3,0,1
+2020|transparency / explainability,9,9,9,50,5,6,4,4,2,0
+2021|environmental impact,9,9,9,55,8,4,2,8,0,0
+2022|environmental impact,9,9,9,55,4,6,2,5,5,2
+2014|fairness / bias,8,8,7,28,2,1,1,6,0,0
+2020|environmental impact,8,8,8,40,1,5,2,7,1,0
+2007|fairness / bias,7,7,7,33,4,3,4,2,1,0
+2019|accountability / governance,7,7,5,27,2,3,2,4,0,0
+2019|privacy / surveillance,7,7,7,39,2,2,4,2,3,0
+2021|uncertainty / reliability,6,6,6,35,5,2,3,5,0,0
+2004|fairness / bias,5,5,5,23,2,1,2,3,1,0
+2009|fairness / bias,5,5,5,29,3,1,0,5,1,0
+2018|privacy / surveillance,5,5,5,30,2,3,2,2,1,0
+1996|fairness / bias,4,,,,,,,,,
+2006|fairness / bias,4,,,,,,,,,
+2010|fairness / bias,4,,,,,,,,,
+2020|uncertainty / reliability,4,,,,,,,,,
+1999|fairness / bias,3,,,,,,,,,
+2013|fairness / bias,3,,,,,,,,,
+2018|transparency / explainability,3,,,,,,,,,
+2019|environmental impact,3,,,,,,,,,
+2019|uncertainty / reliability,3,,,,,,,,,
+2003|fairness / bias,2,,,,,,,,,
+2006|transparency / explainability,2,,,,,,,,,
+2010|transparency / explainability,2,,,,,,,,,
+2012|transparency / explainability,2,,,,,,,,,
+2014|representation / coverage gap,2,,,,,,,,,
+2015|privacy / surveillance,2,,,,,,,,,
+2015|representation / coverage gap,2,,,,,,,,,
+2015|transparency / explainability,2,,,,,,,,,
+2016|transparency / explainability,2,,,,,,,,,
+2018|accountability / governance,2,,,,,,,,,
+1984|fairness / bias,1,,,,,,,,,
+1992|fairness / bias,1,,,,,,,,,
+1994|fairness / bias,1,,,,,,,,,
+1997|fairness / bias,1,,,,,,,,,
+1998|accountability / governance,1,,,,,,,,,
+2000|fairness / bias,1,,,,,,,,,
+2001|fairness / bias,1,,,,,,,,,
+2002|fairness / bias,1,,,,,,,,,
+2003|transparency / explainability,1,,,,,,,,,
+2005|environmental impact,1,,,,,,,,,
+2005|fairness / bias,1,,,,,,,,,
+2005|privacy / surveillance,1,,,,,,,,,
+2008|fairness / bias,1,,,,,,,,,
+2008|transparency / explainability,1,,,,,,,,,
+2010|accountability / governance,1,,,,,,,,,
+2010|environmental impact,1,,,,,,,,,
+2011|representation / coverage gap,1,,,,,,,,,
+2012|environmental impact,1,,,,,,,,,
+2013|transparency / explainability,1,,,,,,,,,
+2014|transparency / explainability,1,,,,,,,,,
+2014|uncertainty / reliability,1,,,,,,,,,
+2015|accountability / governance,1,,,,,,,,,
+2015|uncertainty / reliability,1,,,,,,,,,
+2016|accountability / governance,1,,,,,,,,,
+2016|privacy / surveillance,1,,,,,,,,,
+2017|privacy / surveillance,1,,,,,,,,,
+2017|transparency / explainability,1,,,,,,,,,
+2018|environmental impact,1,,,,,,,,,

@@ -1,0 +1,16 @@
+value,n_papers,n_audited,n_with_triples,n_triples,n_with_mitigation,n_EqualRightsViolation,n_PhysicalHarm,n_EconomicLoss,n_PrivacyViolation,n_PsychologicalHarm
+forestry / vegetation,4382,4382,4211,22196,1757,2318,1564,2725,638,96
+(none),3900,3896,3624,12355,629,1117,2119,1005,675,81
+scene / image classification,3527,3526,3383,16503,1166,1978,1494,1589,565,180
+atmosphere / climate,3192,3192,3075,15486,1301,1468,1297,2019,256,53
+land cover / land use,3125,3124,3035,16607,1231,1989,1111,1844,481,124
+semantic segmentation,2680,2680,2600,14018,883,1800,1165,1147,684,75
+super-resolution / restoration,2048,2048,1970,9372,553,971,1017,839,573,86
+object detection,2035,2035,1989,10768,676,1270,1044,819,638,36
+disaster / hazard,1910,1910,1869,10117,735,1145,1094,905,324,45
+change detection,1890,1890,1850,10276,636,1328,866,962,377,45
+water / hydrology,1423,1423,1380,7280,600,710,551,944,162,25
+building / urban extraction,1131,1131,1117,6596,415,914,522,530,282,41
+agriculture / crop,944,944,915,4848,416,429,197,763,123,6
+3D / reconstruction,305,305,290,1554,90,166,145,126,109,13
+surveillance,282,282,279,1384,81,144,177,89,94,3

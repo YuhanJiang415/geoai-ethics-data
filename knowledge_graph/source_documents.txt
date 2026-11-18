@@ -1,0 +1,28 @@
+AI Ethics Issues in Real World- Evidence from AI Incident Database.pdf
+AI Security for Geoscience and Remote Sensing- Challenges and Future Trends.pdf
+AI_in_Cartography.pdf
+An Operational Ethical Framework for GeoAI.pdf
+An infographic framework of GeoAI ethics based on news data.pdf
+Crossing_Boundaries.pdf
+GeoAI_collapse.pdf
+Geospatial_Ethical_Frameworks.pdf
+LIPIcs.GIScience.2023.93.pdf
+Privacy_GeoAI.pdf
+RESPONSIBLE AI FOR EARTH OBSERVATION.pdf
+Responsible_AI_for_Cities.pdf
+TowardsResponsibleUrban GeospatialAI.pdf
+Transactions in GIS - 2023 - Xing - The challenges of integrating explainable artificial intelligence into GeoAI.pdf
+ai_human_geography.pdf
+chen2025_decoding_ai_risks_news.pdf
+chen2026_ethical_spatial_analysis.pdf
+eu_ai_act_geoai_auditing.pdf
+ijgi-12-00393.pdf
+janowicz2023_philosophical_foundations.pdf
+kessler2018_geoprivacy_manifesto.pdf
+liu2022_geoparsing_biased.pdf
+nelson-et-al-2022-accelerating-ethics-empathy-and-equity-in-geographic-information-science.pdf
+remotesensing-16-04529.pdf
+shi2023_geoai_sustainability.pdf
+trust_foundation_models_geo.pdf
+wei2024_ai_ethics_wikipedia.pdf
+wei2025_ai_ethics_twitter.pdf
