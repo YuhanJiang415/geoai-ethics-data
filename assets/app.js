@@ -199,7 +199,7 @@
     });
   }
   document.querySelectorAll('[data-metric]').forEach(button => button.addEventListener('click', () => drawChart(button.dataset.metric)));
-  drawChart('n_papers');
+  if (svg) drawChart('n_papers');
 
   let toastTimer;
   function toast(message) {

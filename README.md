@@ -58,7 +58,9 @@ Appendices A1–A3 are represented by `data/benchmark/pipeline_comparison.csv`,
 `pipeline_comparison_summary.json`, `coverage_thresholds.csv`,
 `coverage_sensitivity.csv`, `external_controls.json` and `supplementary_notes.md`.
 The last file records definitions, source paths, sample sizes and limitations.
-The public Supplementary S1 guide is `methods/workflow_example.md`.
+The Supplementary Material requested in peer review (S1 worked example, S2 literature
+search) is `methods/Supplementary_Material.pdf`; `methods/workflow_example.md` is a
+short Markdown guide to S1.
 These exports contain aggregate metrics and a paraphrased selected example;
 source passages and private per-paper records were not copied.
 

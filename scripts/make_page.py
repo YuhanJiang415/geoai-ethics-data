@@ -99,6 +99,7 @@ TITLES = {
     "data/benchmark/external_controls.json": "External controls · Appendix A3",
     "data/benchmark/supplementary_notes.md": "Supplementary experiment definitions & limitations",
     "methods/workflow_example.md": "Worked audit example · Supplementary S1",
+    "methods/Supplementary_Material.pdf": "Supplementary Material · S1–S2 (PDF)",
 }
 DESCRIPTIONS.update({
     "data/benchmark/coverage_thresholds.csv": "Ten evidence thresholds with paper counts and both corpus/completed-audit denominators; an instantiation label does not establish observed harm.",
@@ -107,6 +108,7 @@ DESCRIPTIONS.update({
     "data/benchmark/pipeline_comparison_summary.json": "Aggregate human-reference metrics, paired confidence intervals, diagnostics and separately reported model ratings; no paper-level findings.",
     "data/benchmark/external_controls.json": "Aggregate non-AI EO, unrelated-text and three-run paired-abstract controls, including limitations of instantiation discrimination.",
     "data/benchmark/supplementary_notes.md": "Definitions, sample sizes, confidence intervals, source provenance and interpretation limits for Appendices A1–A3.",
+    "methods/Supplementary_Material.pdf": "Supplementary Material requested in peer review: S1 worked example of the ontology-grounded audit and S2 literature search.",
     "methods/workflow_example.md": "Paraphrased Supplementary S1 walkthrough with three saved gate outcomes and expert/model disagreement; a selected exception to aggregate-only corpus findings.",
 })
 paths = [p for folder in ("data", "knowledge_graph", "prompts", "ontology", "methods")
@@ -143,7 +145,7 @@ for p in paths:
                 count += 1
                 if len(sample) < 5: sample.append(row)
             item.update(rows=count, sample=sample)
-    else:
+    elif p.suffix != ".pdf":
         item["preview"] = p.read_text(encoding="utf-8")[:4000]
     catalogue.append(item)
 
