@@ -61,6 +61,10 @@ The last file records definitions, source paths, sample sizes and limitations.
 The Supplementary Material requested in peer review (S1 worked example, S2 literature
 search) is `methods/Supplementary_Material.pdf`; `methods/workflow_example.md` is a
 short Markdown guide to S1.
+Supporting documents for the knowledge-graph edges in S1 (Table S1.1) come from an
+archived graph build that differs from the consensus graph in `knowledge_graph/`:
+the paper-026 edges appear only in the archived build, while the Case C edge
+(paper 060) appears in both. The worked example on the page uses the same sources.
 These exports contain aggregate metrics and a paraphrased selected example;
 source passages and private per-paper records were not copied.
 
