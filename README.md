@@ -39,7 +39,9 @@ modules. It is not needed to build, view or host this portal.
 
 ## Release scope
 
-No full texts, abstracts, verbatim quotes or knowledge-graph source passages are included.
+No full texts, abstracts or knowledge-graph source passages are included. The
+worked example on the page quotes a few short sentences, with attribution, from
+two open-access papers (CC BY-NC-ND 4.0): Hou et al. (2024) and Doda et al. (2024).
 Corpus audit outputs are aggregated; corpus audit cells describing fewer than five
 papers are blank. A blank is not zero. Supplementary benchmark/control outcomes
 retain their stated sample sizes. The paraphrased Supplementary S1 walkthrough

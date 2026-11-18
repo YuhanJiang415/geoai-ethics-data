@@ -1,6 +1,6 @@
 # Supplementary S1: a public workflow walkthrough
 
-Updated 17 November 2026. This is a paraphrased reading guide to the saved benchmark findings, not a recovered execution log or a new audit. It includes selected paper-level findings as an explicit exception to the aggregate corpus release. It contains no verbatim source passages.
+Updated 17 November 2026. This is a paraphrased reading guide to the saved benchmark findings, not a recovered execution log or a new audit. It includes selected paper-level findings as an explicit exception to the aggregate corpus release. The web page quotes short verbatim sentences from both open-access papers (CC BY-NC-ND 4.0) with attribution; this file does not.
 
 Main example: Hou et al. (2024), Global Streetscapes — A comprehensive dataset of 10 million street-level images across 688 cities for urban science and analytics. DOI: 10.1016/j.isprsjprs.2024.06.023; benchmark paper 026. NOT_TRIGGERED comparison: benchmark paper 060, DOI: 10.1016/j.jag.2024.103731.
 
