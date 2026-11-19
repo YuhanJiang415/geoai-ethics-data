@@ -130,28 +130,59 @@
     if (previewTrigger) previewTrigger.focus();
   });
 
-  // Tabs expose one saved case at a time; arrow keys follow the tablist pattern.
-  const caseTabs = [...document.querySelectorAll('[data-case]')];
-  function selectCase(tab) {
-    caseTabs.forEach(item => {
-      const selected = item === tab;
-      item.setAttribute('aria-selected', String(selected));
-      item.tabIndex = selected ? 0 : -1;
-      $(item.getAttribute('aria-controls')).hidden = !selected;
+  // The audit map lists every saved finding; selecting a link opens its evidence trace.
+  // Map links and the tab row below share one selection, keyed by case + finding number.
+  const mapEdges = [...document.querySelectorAll('.map-edge[data-case]')];
+  const traceTabs = [...document.querySelectorAll('.trace-tab')];
+  const TRACE_TITLES = {
+    'bias#0': '#0 · data integration and modeling inhibits algorithmic bias',
+    'bias#1': '#1 · algorithmic bias promotes marginalization and exclusion',
+    'privacy#2': '#2 · data fusion promotes disclosure of sensitive information',
+    'privacy#3': '#3 · disclosure of sensitive information promotes group privacy violation',
+    'opacity#4': '#4 · black-box nature promotes model opacity',
+    'opacity#5': '#5 · model opacity promotes spatial justice and accountability violations',
+    'counterexample#2': 'Paper 060 (a different paper) · #2 · black-box network → lack of transparency',
+  };
+  const keyOf = el => el.dataset.case + el.dataset.edge;
+  function selectCase(source, scroll) {
+    const name = source.dataset.case, key = keyOf(source);
+    mapEdges.forEach(item => {
+      item.setAttribute('aria-pressed', String(item.dataset.case === name));
+      item.classList.toggle('current', keyOf(item) === key);
     });
+    traceTabs.forEach(tab => {
+      const on = keyOf(tab) === key;
+      tab.setAttribute('aria-selected', String(on));
+      tab.classList.toggle('related', !on && tab.dataset.case === name);
+      tab.tabIndex = on ? 0 : -1;
+    });
+    document.querySelectorAll('.case-scene').forEach(panel => { panel.hidden = panel.id !== 'case-' + name; });
+    // A trace that covers a whole chain keeps both links; the selected one stays in focus, the other is dimmed.
+    const panel = $('case-' + name), edge = source.dataset.edge;
+    if (panel) {
+      const rows = [...panel.querySelectorAll('.edge-row, .check-row')];
+      const ids = new Set(rows.map(r => (r.querySelector('.edge-id') || {}).textContent));
+      rows.forEach(r => {
+        const id = (r.querySelector('.edge-id') || {}).textContent;
+        r.classList.toggle('row-focus', ids.size > 1 && id === edge);
+        r.classList.toggle('row-dim', ids.size > 1 && id !== edge);
+      });
+    }
+    $('trace-title').textContent = TRACE_TITLES[key] || '';
+    if (scroll) $('trace-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  caseTabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => selectCase(tab));
+  mapEdges.forEach(button => button.addEventListener('click', () => selectCase(button, true)));
+  traceTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectCase(tab, false));
     tab.addEventListener('keydown', event => {
-      let next;
-      if (event.key === 'ArrowRight') next = (index + 1) % caseTabs.length;
-      if (event.key === 'ArrowLeft') next = (index + caseTabs.length - 1) % caseTabs.length;
-      if (event.key === 'Home') next = 0;
-      if (event.key === 'End') next = caseTabs.length - 1;
+      const n = traceTabs.length;
+      const next = { ArrowRight: (index + 1) % n, ArrowLeft: (index + n - 1) % n, Home: 0, End: n - 1 }[event.key];
       if (next === undefined) return;
-      event.preventDefault(); selectCase(caseTabs[next]); caseTabs[next].focus();
+      event.preventDefault(); selectCase(traceTabs[next], false); traceTabs[next].focus();
     });
   });
+  const firstTab = traceTabs.find(b => keyOf(b) === 'privacy#2');
+  if (firstTab) selectCase(firstTab, false);
 
   // Annual volumes use the released aggregate counts; 2026 is a partial year.
   const annual = data.annual.filter(row => Number(row.value) >= 2010);

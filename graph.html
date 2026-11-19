@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive explorer for the GeoAI ethics knowledge graph: technical features, risk mechanisms, ethical impacts, mitigations and their IS_A hierarchy.">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>Knowledge Graph Explorer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/graph.css">
+  <script>
+    /* Apply the saved or system theme before first paint (same key as the main page). */
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('geoai-release-theme'); } catch (_) {}
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <script src="assets/vendor/vis-network.min.js" defer></script>
+  <script src="assets/graph_data.js" defer></script>
+  <script src="assets/graph.js" defer></script>
+</head>
+<body class="graph-page">
+<a class="skip-link" href="#kg-main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="GeoAI Ethics Audit home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16"/><ellipse cx="20" cy="20" rx="7" ry="16"/><path d="M4 20h32M7 11h26M7 29h26"/><circle class="brand-dot" cx="29" cy="11" r="3.2"/></svg><span>GeoAI Ethics Audit</span></a>
+  <nav aria-label="Main navigation"><a href="index.html#datasets">Dataset</a><a href="index.html#method">Audit example</a><a href="graph.html" aria-current="page">Graph explorer</a><a href="index.html#data">All files</a></nav>
+  <button class="theme-button" id="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.1A8.6 8.6 0 0 1 10.9 3.5a8.6 8.6 0 1 0 9.6 9.6Z"/></svg></button>
+</header>
+<main id="kg-main" class="kg-app">
+  <aside class="kg-rail" aria-label="Graph controls">
+    <div class="kg-intro">
+      <div class="eyebrow">KNOWLEDGE GRAPH EXPLORER</div>
+      <h1>From technical feature to ethical harm.</h1>
+      <p>The causal graph the audit uses, built from 28 GeoAI-ethics source documents with three-model consensus on entity merges and the concept hierarchy. Click a node or link to inspect it.</p>
+    </div>
+
+    <div class="kg-sec kg-stats">
+      <div><strong id="s-nodes">–</strong><span>nodes</span></div>
+      <div><strong id="s-causal">–</strong><span>causal links</span></div>
+      <div><strong id="s-isa">–</strong><span>IS_A links</span></div>
+    </div>
+
+    <div class="kg-sec">
+      <label class="kg-label" for="kg-search">Find a node</label>
+      <div class="kg-search-wrap">
+        <input id="kg-search" type="search" placeholder="e.g. privacy, bias, street view" autocomplete="off" list="kg-node-list">
+        <datalist id="kg-node-list"></datalist>
+      </div>
+      <p class="kg-search-msg" id="kg-search-msg" role="status"></p>
+      <div class="kg-buttons">
+        <button type="button" id="btn-fit">Fit view</button>
+        <button type="button" id="btn-layout" aria-pressed="false">Layered layout</button>
+        <button type="button" id="btn-isa" aria-pressed="true">Hide IS_A</button>
+        <button type="button" id="btn-physics" aria-pressed="false">Resume physics</button>
+      </div>
+    </div>
+
+    <div class="kg-sec">
+      <h2 class="kg-label">Node roles <small>click to show / hide</small></h2>
+      <div id="kg-legend"></div>
+      <p class="kg-shapes"><span>● instance</span><span>▲ parent concept</span><span>■ harm category</span><span><i class="kg-ring"></i> merged node</span></p>
+    </div>
+
+    <div class="kg-sec">
+      <h2 class="kg-label">Relations</h2>
+      <div id="kg-relations"></div>
+    </div>
+
+    <div class="kg-sec">
+      <h2 class="kg-label">Harm families <small>click to focus a cluster</small></h2>
+      <div id="kg-harms"></div>
+    </div>
+
+    <div class="kg-sec kg-foot">
+      <p>Rendered from <a id="kg-graph-link" href="knowledge_graph/geoai_knowledge_merged_hier_merged_consensus_hier.graphml" download><code>knowledge_graph/…_hier.graphml</code></a>. Concept-level copies of causal links (<code>derived = lifted</code>) are not drawn. Link width scales with the number of source documents.</p>
+      <p><a href="index.html#data" class="kg-back">← All graph files and alignment records</a></p>
+    </div>
+  </aside>
+
+  <section class="kg-stage" aria-label="Knowledge graph canvas">
+    <div id="kg-net" role="img" aria-label="Interactive network of the knowledge graph. Use the controls on the left to search and filter."></div>
+    <div class="kg-loading" id="kg-loading">Laying out the graph…</div>
+    <div class="kg-error" id="kg-error" hidden></div>
+    <div class="kg-hint" id="kg-hint">Scroll to zoom · drag to pan · click a node to see its links</div>
+    <article class="kg-detail" id="kg-detail" hidden aria-live="polite">
+      <header><span class="kg-badge" id="d-badge"></span><button type="button" class="kg-close" id="d-close" aria-label="Close details">×</button></header>
+      <h3 id="d-title"></h3>
+      <div id="d-body"></div>
+    </article>
+  </section>
+</main>
+</body>
+</html>

@@ -3,7 +3,11 @@ import csv
 import gzip
 import html
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import export_graph  # noqa: E402  (writes assets/graph_data.js for graph.html)
 
 OUT = Path(__file__).resolve().parents[1]
 S = json.loads((OUT / "data/summary.json").read_text())
@@ -56,6 +60,7 @@ FILES = [
         ("ontology/validation.py", "Admissible-topology rules enforced at every stage."),
         ("prompts/", "Every prompt sent to a language model: preprocessing, audit reasoner, instantiation gate, KG extraction, entity resolution, and the annotation codebook used by annotators."),
         ("scripts/build_release.py", "The script that produced this release from the private audit outputs."),
+        ("scripts/export_graph.py", "Converts the released GraphML into the data file used by the interactive graph explorer (graph.html)."),
     ]),
 ]
 
@@ -102,6 +107,7 @@ TITLES = {
     "methods/Supplementary_Material.pdf": "Supplementary Material · S1–S2 (PDF)",
 }
 DESCRIPTIONS.update({
+    "scripts/export_graph.py": "Converts the released GraphML into the data file behind the interactive graph explorer (graph.html).",
     "data/benchmark/coverage_thresholds.csv": "Ten evidence thresholds with paper counts and both corpus/completed-audit denominators; an instantiation label does not establish observed harm.",
     "data/benchmark/coverage_sensitivity.csv": "Recomputed coverage after fixed top-k risk-edge removal and exploratory opacity lexical filtering.",
     "data/benchmark/pipeline_comparison.csv": "Four configurations on 100 papers: expert-reference recovery, schema conformance and quote/graph anchoring. Rates are proportions.",
@@ -115,6 +121,7 @@ paths = [p for folder in ("data", "knowledge_graph", "prompts", "ontology", "met
          for p in sorted((OUT / folder).rglob("*"))
          if p.is_file() and not p.name.startswith(".") and "__pycache__" not in p.parts]
 paths.append(OUT / "scripts/build_release.py")
+paths.append(OUT / "scripts/export_graph.py")
 priority = ["data/papers.csv", "data/paper_tags.csv", "data/summary.json",
             "data/aggregates/edges.csv.gz", "data/aggregates/entities.csv.gz",
             "data/aggregates/by_year.csv", "data/aggregates/by_journal.csv",
@@ -175,4 +182,6 @@ tokens = {"@@PAYLOAD@@": payload, "@@ROWS@@": "\n".join(map(render_row, catalogu
 page = (OUT / "scripts/page.html").read_text(encoding="utf-8")
 for token, value in tokens.items(): page = page.replace(token, value)
 (OUT / "index.html").write_text(page, encoding="utf-8")
+g = export_graph.main()
 print(f"Built index.html: {len(catalogue)} files; archive {size(archive)}")
+print(f"Built assets/graph_data.js: {g['nodes']} nodes, {g['edges']} edges")

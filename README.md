@@ -22,13 +22,16 @@ After changing public files, run from the project root:
 python3 public_release/scripts/make_page.py
 ```
 
-This rebuilds `index.html` and `downloads/geoai-ethics-data.zip` from the files
+This rebuilds `index.html`, `downloads/geoai-ethics-data.zip` and the data file
+behind the graph explorer (`assets/graph_data.js`, via `scripts/export_graph.py`) from the files
 already in this public directory. The archive includes public data, knowledge
 graph, prompts, ontology, the original aggregation script and this README.
 It never reads or packages private audit outputs.
 
 Edit `scripts/page.html` for page content, `assets/style.css` for presentation,
 and `assets/app.js` for browser interactions. Regeneration preserves the design.
+`graph.html` is the interactive knowledge graph explorer; it reads the released
+GraphML through `assets/graph_data.js`, with `assets/graph.css` and `assets/graph.js`.
 Serve or publish the entire `public_release/` directory, not just the HTML file.
 
 ## Rebuild the underlying data
@@ -55,8 +58,10 @@ derived six-family and eleven-theme mappings are additional analysis layers.
   prompts and method notes are released under the Creative Commons Attribution 4.0
   International licence (CC BY 4.0); full text in `LICENSE`. You may share and adapt
   them for any purpose, provided you give appropriate credit and indicate changes.
-- **Code** — `scripts/`, `assets/`, `ontology/*.py` and the generated `index.html`
-  are released under the MIT License; full text in `LICENSE-CODE`.
+- **Code** — `scripts/`, `assets/`, `ontology/*.py`, `graph.html` and the generated `index.html`
+  are released under the MIT License; full text in `LICENSE-CODE`. Exception:
+  `assets/vendor/vis-network.min.js` is the unmodified vis-network 9.1.9 library
+  (© Almende B.V. and visjs contributors, dual Apache-2.0 / MIT; notice in the file header).
 
 Not covered by either licence: `methods/Supplementary_Material.pdf` is the
 manuscript's Supplementary Material, shared here for peer review; its reuse terms
