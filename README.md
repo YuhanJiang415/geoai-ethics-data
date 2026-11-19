@@ -51,12 +51,17 @@ derived six-family and eleven-theme mappings are additional analysis layers.
 
 ## Licence
 
-The data, aggregates, knowledge graph, ontology, prompts and method notes in this
-repository are released under the Creative Commons Attribution 4.0 International
-licence (CC BY 4.0); the full text is in `LICENSE`. You may share and adapt them
-for any purpose, provided you give appropriate credit and indicate changes.
+- **Data and content** — the data, aggregates, knowledge graph, ontology definitions,
+  prompts and method notes are released under the Creative Commons Attribution 4.0
+  International licence (CC BY 4.0); full text in `LICENSE`. You may share and adapt
+  them for any purpose, provided you give appropriate credit and indicate changes.
+- **Code** — `scripts/`, `assets/`, `ontology/*.py` and the generated `index.html`
+  are released under the MIT License; full text in `LICENSE-CODE`.
 
-Not covered: the short verbatim quotations from Hou et al. (2024) and Doda et al.
+Not covered by either licence: `methods/Supplementary_Material.pdf` is the
+manuscript's Supplementary Material, shared here for peer review; its reuse terms
+will be set by the journal's publishing agreement and confirmed on acceptance.
+The short verbatim quotations from Hou et al. (2024) and Doda et al.
 (2024) in the worked example remain under those papers' own licence
 (CC BY-NC-ND 4.0), and bibliographic metadata of the audited papers (titles, DOIs)
 belongs to the respective publishers' records. The portal does not invent a

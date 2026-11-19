@@ -166,7 +166,7 @@ for label, g in GROUPS.items():
 (OUT / "downloads").mkdir(exist_ok=True)
 archive = OUT / "downloads/geoai-ethics-data.zip"
 with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
-    for p in paths + [OUT / "README.md", OUT / "LICENSE"]:
+    for p in paths + [OUT / "README.md", OUT / "LICENSE", OUT / "LICENSE-CODE"]:
         z.write(p, arcname="geoai-ethics-data/" + p.relative_to(OUT).as_posix())
 payload = json.dumps({"summary": S, "annual": annual, "files": catalogue}, ensure_ascii=False).replace("<", "\\u003c")
 tokens = {"@@PAYLOAD@@": payload, "@@ROWS@@": "\n".join(map(render_row, catalogue)), "@@FILTERS@@": filters,
