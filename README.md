@@ -49,8 +49,18 @@ is a selected paper-level example; complete per-paper audit outputs are excluded
 The graph and aggregates retain the five harm families recorded at audit time;
 derived six-family and eleven-theme mappings are additional analysis layers.
 
-Data and code licences remain pending author selection. The portal does not
-assign a licence or invent a publication DOI.
+## Licence
+
+The data, aggregates, knowledge graph, ontology, prompts and method notes in this
+repository are released under the Creative Commons Attribution 4.0 International
+licence (CC BY 4.0); the full text is in `LICENSE`. You may share and adapt them
+for any purpose, provided you give appropriate credit and indicate changes.
+
+Not covered: the short verbatim quotations from Hou et al. (2024) and Doda et al.
+(2024) in the worked example remain under those papers' own licence
+(CC BY-NC-ND 4.0), and bibliographic metadata of the audited papers (titles, DOIs)
+belongs to the respective publishers' records. The portal does not invent a
+publication DOI; a citation will be added once the paper is published.
 
 ## Supplementary update — 17 November 2026
 
